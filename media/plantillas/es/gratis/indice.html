@@ -1,0 +1,163 @@
+<script type="text/javascript">
+<!--
+function cargar_secciones(s){
+ if (s!="") {
+  document.getElementById('cargando1').style.display = "block";
+  new Ajax.Request("/poner_anuncio_gratis/seccion/"+escape(s),
+ 	{method:'get',onComplete:rellenarCategorias,onFailure:reportError});
+ }
+}
+function rellenarCategorias(request){
+ document.getElementById('cargando1').style.display = "none";
+ opcs = eval("("+request.responseText+")");
+ opt  = document.getElementById('categoria');
+ n = opcs.length;
+ for (i = opt.length; i>1; i--){
+  opt.remove(i-1);
+ }
+ for (i =0; i<n; i++) {
+  opt[opt.length] = new Option(opcs[i].nombre,opcs[i].idc);
+ }
+ if (n>0) document.getElementById('mostrar_form').style.display = "block";
+}
+function reportError(){
+ window.alert("No se pudieron cargar las categorias");
+}
+function mostrar_formulario(){
+ s = document.getElementById('seccion').value;
+ if (s!=""){
+  c = document.getElementById('categoria').value;
+  if (c!=""){
+  	document.getElementById('cargando1').style.display = "block";
+  	new Ajax.Request("/poner_anuncio_gratis/form/"+escape(s)+"/"+
+  	(c),
+ 	{method:'get',onComplete:rellenarFormulario,onFailure:reportError});
+  }
+ }
+}
+function rellenarFormulario(request){
+ document.getElementById('cargando1').style.display = "none";
+ document.getElementById('formulario').innerHTML = request.responseText;
+ document.getElementById('seleccion_tipo').style.display = "none";
+ document.getElementById('paso1').id = "paso2";
+ //Pasar los datos de contacto:
+ if (document.getElementById('nombre_contacto'))
+  document.getElementById('nombre_contacto').value = document.getElementById('nombre_aux').value;
+ if (document.getElementById('e_mail_contacto'))
+  document.getElementById('e_mail_contacto').value = document.getElementById('email_aux').value;
+ if (document.getElementById('tlf_contacto'))
+  document.getElementById('tlf_contacto').value = document.getElementById('tlf_contacto_aux').value;
+ if (document.getElementById('tlf_confidencial') && document.getElementById('tlf_confidencial_aux').checked)
+  document.getElementById('tlf_confidencial').value = 1;
+
+ 
+ if (document.getElementById('idu_aux'))
+  document.getElementById('idu').value = document.getElementById('idu_aux').value;
+ else
+  document.getElementById('idu').value = 0;
+ if (document.getElementById('tipo_propietario'))
+  document.getElementById('tipo_propietario').value = document.getElementById('tipo_propietario_aux').value;
+ 
+ //Inicializar Mapa:
+ var centerLongitud = #lat#;
+ var centerLatitud = #lng#;
+ var mostrar_zonas = true;
+ IniciarMapa(#lat#, #lng#);
+ 
+}
+#zonas_js#
+function validar(){
+ f = document.getElementById('frmEditar');
+ if (f.titulo_es.value.length<1) {
+ 	alert("Escriba un titulo");
+ 	return false;
+ }
+ if (f.lng.value==""||f.lat.value=="") {
+ 	alert("Seleccione un punto en el mapa");
+ 	return false;
+ }
+ if (f.provincia.value==""){
+ 	alert("Seleccione la provincia");
+ 	return false;
+ }
+ if (document.getElementById('imagen0').value==""){
+ 	alert("Al menos debe enviar una imagen");
+ 	return false;
+ }
+ f.submit();
+}
+//-->
+</script>
+<div class="box" id="mi_anuncio">
+ <div class="content-subheader">
+  <h2>Alta de un anuncio gratis</h2>
+ </div>
+ <div class="pasos-alta">
+    <ul id="paso1"><!-- numero paso seleccionado -->
+        <li class="paso1"><!-- numero paso seleccionado  id="paso1" /  id="paso2" /  id="paso3" /  id="paso4"-->
+            <h3>Datos b&aacute;sicos</h3>
+            <p>Secci&oacute;n,categor&iacute;a,Tipo</p>
+        </li>
+        <li class="paso2">
+            <h3>Datos del anuncio</h3>
+            <p>Datos de contacto, Descripci&oacute;n del anuncio,mapa...</p>
+        </li>
+        <li class="paso3">
+            <h3>Confirmaci&oacute;n</h3>
+            <p>Su n&uacute;mero de anuncio...</p>
+        </li>
+    </ul>
+ </div>
+ <div id="seleccion_tipo" class="ficha">
+  <div class="caja">
+   <div class="titulo">Caracter&iacute;sticas del anuncio</div>
+   <div class="box" >
+    <label for="seccion">Tipo de anuncio:</label>
+    <select name="seccion" id="seccion" onchange="cargar_secciones(this.value);">
+     <option value="">Seleccionar</option>
+      #secciones#
+     </select>
+     <br/>
+     <label for="categoria">Categor&iacute;a:</label>
+ 	 <select name="idc" id="categoria">
+ 	 <option value="">Seleccione una </option>
+     </select>
+     <br/>
+     </div>
+     <div class="titulo">Datos de contacto</div>
+     <div class="box">
+ 
+ Si no est&aacute; registrado, puede introducir sus datos
+ <br/>
+ <label for="nombre_aux">Nombre</label>
+ <input type="text" size="23" name="nombre_aux" id="nombre_aux" value="#nombre#"/>
+ <label for="email_aux">Correo electr&oacute;nico</label>
+ <input type="text" size="23" name="email_aux" id="email_aux" value="#email#"/>
+ 
+ <br/>
+ 
+ Si est&aacute; registrado
+ #info_login#
+ <br/>
+ <label for="tlf_contacto_aux">Tel&eacute;fono del contacto:</label><br/>
+ <input id="tlf_contacto_aux" type="text" class="casilla" name="tlf_contacto_aux"  size="40"><br/>
+ <label for="tlf_confidencial_aux">TLF confidencial</label><input type="checkbox" value="1" name="tlf_confidencial_aux" id="tlf_confidencial_aux"/>
+ <br/>
+ <label for="titulo_es">Tipo propietario</label>
+ <select name="tipo_propietario_aux" id="tipo_propietario_aux">
+  #tipos_propietario#
+ </select>
+ </div>
+ 
+ <input type="button" id="mostrar_form" value="Continuar" onclick="mostrar_formulario()"/>
+ </div>
+	
+ </div>
+ <div id="cargando1">
+  Cargando...<img src="/media/images/loader.gif" alt="Cargando..."/>
+ </div>
+ <br/>
+  <div id="formulario">
+	 <!-- formulario aqui //-->
+	 </div>  
+</div>

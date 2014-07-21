@@ -1,0 +1,1023 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zenphp 0.1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-04-02 13:59+0100\n"
+"PO-Revision-Date: 2008-04-02 13:59+0100\n"
+"Last-Translator: juaxix <juaxix [en] gmail.com>\n"
+"Language-Team: zenphp <juaxix@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /home/juax/csl2-zenphp/trunk/zenphp/clases\n"
+"X-Poedit-SearchPath-1: /home/juax/csl2-zenphp/trunk/zenphp\n"
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_buffer.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_carrito.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_JSON.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_bd_backup.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xcs.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_plantilla.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_busqueda.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_validaciones.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_login.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_modelo_datos.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_sesiones_seguras.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_calendario.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_ajax.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_admin.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_resultado_validacion.php:20
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_correo.php:18
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_singleton.php:19
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_modelo_datos.php:19
+msgid "Acceso directo no permitido"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:273
+msgid "Tipo de base de datos no soportada por la clase zen_basedatos,consulta los tipos disponibles:"
+msgstr "DataBase type not supported"
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:333
+msgid "Datos de conexion erroneos! No se puede establecer una conexion con el servidor de BD."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:341
+msgid "Datos de la basedatos erroneos! No se puede seleccionar la BD."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:351
+msgid "Ya conectado a una base de datos."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:493
+#, php-format
+msgid "zenBD:NAMES UTF8 no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:494
+#, php-format
+msgid "zenBD: collation_server utf8 no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:495
+#, php-format
+msgid "zenBD: character_set_client no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:496
+#, php-format
+msgid "zenBD: character_set_connection no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:497
+#, php-format
+msgid "zenBD: character_set_results no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:498
+#, php-format
+msgid "zenBD: character_set_server no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:499
+#, php-format
+msgid "zenBD: charset no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:500
+#, php-format
+msgid "zenBD: CHARACTER no disponible"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:550
+msgid "La consulta de un &uacute;nico resultado ha devuelto m&aacute;s de uno o ninguno."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:744
+msgid "Se debe pasar una matriz (array) con los nombres de los campos de la tabla y sus valores, a la funci&oacute;n the insertar_matriz()."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:796
+msgid "Se debe pasar una matriz(array) con a la funci&oacute;n actualizar_matriz()."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:861
+#, php-format
+msgid "El fichero %s no existe."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:867
+#, php-format
+msgid "No se puede leer el fichero %s."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:904
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:917
+msgid "No hay conexion de base de datos o la consulta es invalida"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:907
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:920
+msgid "Consulta SQL erronea"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:964
+#, php-format
+msgid "No se pudo obtener la informaci&oacute;n de la tabla %s y campo %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1006
+msgid "No se pudo contar el numero de filas resultantes"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1048
+msgid "No hay ninguna consulta ejecutada"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1052
+msgid "Funci&oacute;n (cuenta_campos) no valida con este tipo de base de datos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1068
+msgid "Error con el Comando de nombre de campo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1072
+msgid "Funci&oacute;n (comando_nombre_campo) no valida con este tipo de base de datos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1124
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1138
+msgid "Error de "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1124
+#, php-format
+msgid "Error: %d (%s)\n"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1149
+msgid "&Uacute;ltima consulta SQL"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_basedatos.php:1204
+msgid "No desconectado correctamente..."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_cronometro.php:15
+msgid "1,2,3,...para de contar, aqui ver nada podr&aacute;s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_paginador.php:106
+msgid "P&aacute;gina incorrecta"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_paginador.php:217
+msgid "Total p&aacute;ginas = "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_paginador.php:218
+msgid "N&uacute;mero de p&aacute;gina = "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:21
+msgid "No existen las librerias DOM necesarias para cargar zen_andamio"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:190
+msgid "No se ha realizado ninguna acci&oacute;n en esta sesi&oacute;n del andamio"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:191
+msgid "Sin acciones"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:222
+msgid "No existe la plantilla de zen_andamio (scaffolding) para mostrar los modelos de datos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:252
+msgid "Contenido para el modelo "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:257
+msgid "Nueva tupla para el modelo "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:261
+msgid "Creando nueva tupla para el modelo "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:274
+#, php-format
+msgid "<h1>A&ntilde;adir registro a %s</h1>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:284
+msgid "A&ntilde;adir"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:286
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:343
+msgid "Cancelar"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:304
+msgid "Registro a&ntilde;adido con id:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:305
+msgid "Inserci&oacute;n de registro"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:310
+#, php-format
+msgid "Se ha insertado correctamente el registro, <a href='%s'>continuar</a>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:314
+msgid "Ha ocurrido un error al insertar el registro.<a href='javascript:document.history.back();'>Volver</a>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:325
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:357
+msgid "Editar registro"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:327
+msgid "No existe el registro con ID:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:342
+msgid "Actualizar"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:361
+msgid "Registro modificado con id:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:362
+msgid "Actualizaci&oacute;n de registro"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:367
+#, php-format
+msgid "Se ha actualizado correctamente el registro, <a href='%s'>continuar</a>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:371
+msgid "Ha ocurrido un error al actualizar el registro.<a href='javascript:document.history.back();'>Volver</a>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:383
+msgid "Borrar registro"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:388
+msgid "Registro borrado con id:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:389
+msgid "Eliminaci&oacute;n de registro"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:395
+#, php-format
+msgid "Se ha borrado correctamente el registro, <a href='%s'>continuar</a>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:398
+msgid "Ha ocurrido un error al borrar el registro.<a href='javascript:document.history.back();'>Volver</a>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:403
+msgid "Confirmaci&oacute;n: &iquest;Desea borrar el registro?:<br>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:404
+msgid "S&iacute;"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:405
+msgid "No"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:489
+msgid "No hay registros en la/s tabla/s "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:503
+msgid "Listado de tuplas de las tablas del modelo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:509
+msgid "Total registros: "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:512
+msgid "Insertar una Nueva tupla en el modelo de datos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:514
+msgid "A&ntilde;adir nuevo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:525
+msgid "No encuentro el fichero tablas.html para construir el listado de tablas del andamio o scaffolding de "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:537
+msgid "Sin comentarios"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:552
+msgid "Buscando..."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_andamio.php:563
+#, php-format
+msgid "No se puede cargar la plantilla del andamio 'base_web.html' (scaffolding) para el idioma '%s' del directorio '%s'."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion_admin.php:18
+msgid "&iquest;Qu&eacute; puedes administrar sin zenphp?.Acceso directo no permitido"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion_admin.php:59
+msgid "No se pudo cargar la configuraci&oacute;n de la aplicaci&oacute;n administradora"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion_admin.php:73
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion.php:52
+msgid "No se pudo conectar a la base de datos,revise su configuraci&oacute;n!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion_admin.php:89
+#, php-format
+msgid "Necesito un m&eacute;todo para hacer login valido en la clase %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen.php:21
+msgid "No se pudo cargar la clase para operar con la base de datos zen_basedatos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen.php:22
+msgid "No se pudo cargar la clase para operar con sesiones de php zen_sesiones_seguras"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen.php:23
+msgid "No se pudo cargar la clase para operar con la salida HTML"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen.php:188
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:27
+#, php-format
+msgid "No se pudo cargar la clase %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen.php:222
+msgid "El lenguaje no existe"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_aplicacion.php:39
+msgid "No se pudo cargar"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_bd_backup.php:56
+msgid "Esta clase solo exporta bases de datos de mysql"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:119
+msgid "Base de Controladores de ruta inv&aacute;lido:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:160
+msgid "Imposible cargar la clase zen_andamio (scaffolding de zenphp)"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:172
+#, php-format
+msgid "%s no es un zen_andamio! (modelo:%s)"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:188
+#, php-format
+msgid "No existe la acci&oacute;n %s  del controlador %s para el modelo %s."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:231
+#, php-format
+msgid "No se pudo cargar el <b>modelo</b> <b style=\"background-color:white; color:red;\">%s</b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:252
+#, php-format
+msgid "No se pudo cargar el controlador por defecto(%s): %s."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_enrutador.php:270
+#, php-format
+msgid "La acci&oacute;n \"%s()\" del controlador \"%s\" no pudo ser llamada"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xcs.php:173
+msgid "No existe el fichero: "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xcs.php:354
+#, php-format
+msgid "No existe el fichero: %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:18
+msgid "Error ,horrror: no puedes acceder aqui primor ;-)"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:62
+#, php-format
+msgid "El directorio de logs %s no existe,cr&eacute;alo o desactiva la opci&oacute;n ZF_MODO_GUARDAR_LOG en zen.php"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:64
+#, php-format
+msgid "No se puede escribir en el directorio de log %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:100
+#, php-format
+msgid "El fichero %s no existe"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:107
+#, php-format
+msgid "El fichero %s no se puede escribir"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:168
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:174
+msgid "Linea"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:168
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:174
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:126
+msgid "Error"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:168
+msgid "Tipo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:168
+msgid "[FATAL]"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:168
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:174
+msgid "Fecha"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_error_log.php:174
+msgid "Tama"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_plantilla.php:45
+#, php-format
+msgid "No se pudo cargar el fichero de plantilla %s de los directorios de plantillas<br>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_plantilla.php:52
+msgid "No se pudo cargar el zen_compactador"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_plantilla.php:81
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_plantilla.php:110
+msgid "No se puede leer el fichero "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_busqueda.php:84
+msgid "No se pudo cargar la clase zen_html_busqueda"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xml.php:21
+msgid "No puedes acceder aqui directamente"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xml.php:86
+#, php-format
+msgid "zen_xml error: la clase %s necesita de funciones como %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xml.php:89
+#, php-format
+msgid "zen_xml error : %s no puede continuar"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xml.php:102
+#, php-format
+msgid "zen_xml error :(%s) el fichero %s no tiene permisos de lectura!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xml.php:114
+#, php-format
+msgid "zen_xml error (%s): no se pudo crear el objeto SimpleXMLElement desde la cadena [%s]"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_xml.php:117
+#, php-format
+msgid "zen_xml error ( %s )- el argumento $cadena est&aacute; vacio"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html.php:18
+msgid "Sin HTML no hay dolor.Acceso directo no permitido"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_cache.php:18
+msgid "Que poco cach&eacute; intentar entrar aqui...Acceso directo no permitido"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_cache.php:133
+msgid "No se puede escribir contenido en la cache"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_cache.php:157
+msgid "No hay contenido para almacenar en la cache"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_cache.php:169
+msgid "Debes especificar un ID para el fichero de cache"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_cache.php:181
+msgid "Debes especificar el limite de horas como un numero"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_busqueda.php:18
+msgid "No se puede buscar...no hay zen sin zazen"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_busqueda.php:58
+msgid "No existe el fichero de plantilla para la b&uacute;squeda."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_validaciones.php:78
+#, php-format
+msgid "No se pudo cargar la clase %s."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:127
+msgid "Alerta"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:128
+msgid "Error de interprete"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:129
+msgid "Aviso"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:130
+msgid "Error de nucleo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:131
+msgid "Alerta de nucleo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:132
+msgid "Error al compilar"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:133
+msgid "Alerta al compilar"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:134
+msgid "Error de usuario"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:135
+msgid "Alerta de usuario"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:136
+msgid "Aviso de usuario"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:137
+msgid "Aviso en tiempo de ejecucion"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:199
+msgid "No se pudo cargar la clase de plantillas"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:218
+#, php-format
+msgid ""
+"\n"
+"Error PHP:\n"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:219
+msgid "Severidad:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:220
+msgid "Mensaje:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_excepcion.php:221
+msgid "Fichero:"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:43
+msgid "El fichero no existe"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:44
+msgid "Error escribiendo el fichero"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:45
+msgid "No se puede escribir el fichero"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:98
+#, php-format
+msgid "No existe el fichero de configuraci&oacute;n: %s en el/los directorio/s de configuraci&oacute;n"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:98
+msgid "Cargando configuraci&oacute;n con zen___carga_configuracion"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_config.php:111
+#, php-format
+msgid "No se pudo cargar las constantes de idiomas %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_modelo_datos.php:106
+msgid "No se puede cargar zen_html_modelo_datos."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_modelo_datos.php:114
+msgid "Error en la Carga de clase visualizador de usuario "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_modelo_datos.php:213
+msgid "La clase pasada a obtener_BD no es una clase zen_basedatos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_modelo_datos.php:366
+#, php-format
+msgid "Es posible que la funci&oacute;n %s necesite cargarse; ejemplo: zen___carga_funciones(\"zen_ficheros\")"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_ajax.php:262
+msgid "No se puede incluir el fichero o llamar a la funci&oacute;n: "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_generador_rss.php:114
+#, php-format
+msgid "Generado el %s "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_monedas.php:53
+msgid "zen_moneda Error: No se puede encontrar el fichero "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_monedas.php:65
+msgid "zen_moneda Error: No se pudo leer el origen de datos: "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_monedas.php:66
+msgid " o est&aacute; vacio"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_admin.php:49
+msgid "Administraci&oacute;n"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_correo.php:21
+msgid "Error cargando clase phpmailer en la clase correo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_modelo_datos.php:36
+msgid "No se pudo cargar la clase plantillas de zenphp"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_modelo_datos.php:89
+msgid "No hay datos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_modelo_datos.php:108
+#, php-format
+msgid "No hay datos para el id %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/clases/clase_zen_html_modelo_datos.php:135
+msgid "No se pueden leer los ficheros de plantillas para mostrar el listado de este modelo: "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/zen_nucleo.php:59
+msgid "No puedo leer el directorio de zenphp"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/zen_nucleo.php:61
+msgid "zenphp no puede leer el directorio donde reside."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/zen_nucleo.php:154
+#, php-format
+msgid "El directorio de aplicaciones %s no existe."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/librerias/clase_zen_descarga.php:20
+msgid "No se puede acceder"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/librerias/clase_zen_descarga.php:79
+msgid "No encuentro el fichero zenphp/config/mime-type.ini"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/librerias/clase_zen_descarga.php:110
+msgid "El Fichero no existe"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/librerias/clase_zen_descarga.php:202
+msgid "Download"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/librerias/clase_zen_descarga.php:206
+msgid "No hay archivos!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/zen_libreria_POA.php:36
+msgid "<b>[Error Aspecto]:</b> El fichero <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/zen_libreria_POA.php:36
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:155
+msgid "</b> no existe!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/zen_libreria_POA.php:86
+msgid "<b>[Error Aspectos]:</b> El fichero compilado <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/zen_libreria_POA.php:86
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA.php:81
+msgid "</b> [Del Original: <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/zen_libreria_POA.php:86
+msgid "</b>] no se ha podido cargar!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/claze_zen_FabricaClases.php:59
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/claze_zen_FabricaClases.php:63
+msgid "No se puede escribir en el directorio: "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA.php:81
+msgid "<b>[Error de Aspectos]:</b> El Fichero <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA.php:81
+msgid "</b>] no pudo ser cargado/creado para escribir!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA.php:88
+msgid "<b>[Error de Aspectos]:</b> No se pudo escribir los datos compilados en el fichero <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA.php:88
+msgid " [Del Original: <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:155
+msgid "<b>[Error de Aspecto]:</b> El fichero <b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:233
+msgid "<b>[Error de Aspecto]:</b> Valor no definido: '<b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:234
+msgid "</b>' para la etiqueta notacion!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:373
+msgid "<b>[Error Aspecto]:</b> No se puede definir un Punto de Corte con el mismo nombre de clase [<b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:374
+msgid "</b>], ver atributo: \"clase\" y \"nombre_clase\"."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:381
+msgid "<b>[Error Aspecto]:</b>No se puede definir un Punto de Corte con el mismo nombre de funcion [<b>"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Aspecto.php:382
+msgid "</b>],ver atributo: \"funcion\" y \"nombre_funcion\"."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Compilador.php:514
+msgid "\" Codigo */ \n"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_Compilador.php:541
+msgid ""
+"\" Codigo Auto */\n"
+" "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_XML.php:60
+#, php-format
+msgid "zen_POA_XML error: %s en la linea %d"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_XML.php:74
+msgid "<b>[Error de Aspecto]:</b> El Nodo de Punto de corte'"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_XML.php:75
+msgid "' no puede tener un 'nombre' y al mismo tiempo definir 'auto'!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_XML.php:80
+msgid "<b>[Error de Aspecto]:</b> El Nodo de Punto de corte no tiene un atributo 'nombre' o 'auto' definido!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/generador/clase_zen_POA_XML.php:105
+#, php-format
+msgid "<b>zen_POA_XML:[Error de Aspecto]:</b> El Nodo XML '%s no corresponde a la herecia correcta!"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_general.php:267
+#, php-format
+msgid "El argumento %s debe ser un array"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_general.php:276
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_general.php:296
+msgid "Argumento #2 ha de ser un array"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_general.php:300
+msgid "Argumento #1 ha de ser una funci&oacute;n"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:132
+#, php-format
+msgid "No se puede cargar la clase %s/%s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:137
+msgid "No se puede encontrar el fichero de la clase "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:178
+msgid "No se pudo cargar la clase zen_aplicacion"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:179
+msgid "No se pudo cargar la clase zen_aplicacion_admin"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:181
+msgid "No se pudo cargar la clase zen_modelo_datos"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:182
+msgid "No se pudo cargar la clase zen_html"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:184
+#, php-format
+msgid "No existe el fichero de aplicaci&oacute;n %s"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:233
+msgid "No se pudo cargar la clase de excepciones"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_nucleo.php:291
+msgid "No existe el directorio de modelos "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_html.php:18
+msgid "No puedes ver este HTML,acceso directo no permitido"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "Domingo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "Lunes"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "Martes"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "Mi&eacute;rcoles"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "Jueves"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "Viernes"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:64
+msgid "S&aacute;bado"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Enero"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Febrero"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Marzo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Abril"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Mayo"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Junio"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Julio"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Agosto"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Septiembre"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Octubre"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Noviembre"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:65
+msgid "Diciembre"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_fechas.php:85
+msgid "Fecha no v&aacute;lida "
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_algoritmos.php:15
+msgid "No se puede acceder aqui sin mas ;)"
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_ficheros.php:31
+msgid "El fichero est&aacute; vacio."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_ficheros.php:37
+msgid "El directorio de destino no existe."
+msgstr ""
+
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_ficheros.php:43
+#: /home/juax/csl2-zenphp/trunk/zenphp/funciones/zen_ficheros.php:67
+msgid "Error subiendo fichero."
+msgstr ""
+

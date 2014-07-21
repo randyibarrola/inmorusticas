@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+RewriteRule ^[\/]admin\/(.*) - [PT]
+RewriteRule ^([a-zA-Z0-9\/\-\_]*)[\/]*$ index.php/$1/

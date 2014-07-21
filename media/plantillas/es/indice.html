@@ -1,0 +1,47 @@
+<div id="localizador" class="localizador_grande">
+  <div id="loader"><img alt="Loader" src="media/images/loader.gif" /> Cargando mapa...</div>
+</div>
+
+<script language="JavaScript" type="text/javascript">
+function buscar(z){
+ d = document.frmFiltro;
+ if (tipomarcas!="markers/u/destacados/")
+  url = tipomarcas; //la url debe mantenerse
+ else
+  url = "markers/u/?"; //nuevo filtro
+ //formulario con los datos del filtrado:
+ f = document.frmFiltro;
+ //destacado/seccion/categoria/tipo/provincia/precio
+ 
+ //seccion/tipo/ciudad --> /alquiler/casa/granada/habitaciones/precio/
+ if (document.getElementById('transaccion'))
+  url += "s="+document.getElementById('transaccion').value;
+ if (document.getElementById('tipo_propiedad'))
+  url += "&c="+document.getElementById('tipo_propiedad').value;
+ //o bien : /seccion/idc/tipo/ciudad/habitaciones/precio/
+ 
+ if (d.provincia.value!="")
+  url += "&p="+ d.provincia.value; 
+ if (d.precio.value!=0)
+  url += "&pr="+ d.precio.value+"/";
+ if (d.num_habitaciones.value!="")
+  url += "&h="+document.getElementById('num_habitaciones').value;
+ 
+ 
+ //hacer peticion:
+ listMarkers(url,z);
+ //Buscar provincia para recoger las coordenadas donde centrar
+ if (d.provincia.value!=""){
+  new Ajax.Request("markers/getxy/"+d.provincia.value+"/",{
+    method: 'GET',
+    onComplete: function(request){
+     //Coordenadas:
+     coordenadas = eval("("+request.responseText+")");
+     //Tenemos las coordenas, ahora centramos el mapa:
+     mapa.setCenter(new GLatLng(coordenadas[0]["lng"],coordenadas[0]["lat"]), 9);
+    }
+  }
+  );
+ }
+}
+</script>

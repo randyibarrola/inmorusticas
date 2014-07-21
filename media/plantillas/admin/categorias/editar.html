@@ -1,0 +1,52 @@
+<script language="JavaScript">
+function validar(){
+ if (document.frmCategorias.nombre_es.value.length>3){
+  document.frmCategorias.submit();
+ } else {
+  window.alert("Rellena al menos el titulo");
+ }
+}
+</script>
+<h1>#nombre_seccion#</h1>
+<form name="frmCategorias" id="frmCategorias" method="POST" action="index.php/contenidos/actualizar/#seccion#/#idc#/">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+  <td width="15%">T&iacute;tulo espa&ntilde;ol:</td>
+  <td width="85%"><label>
+    <input name="nombre_es" class="casilla" id="nombre_es" type="text" value="#nombre_es#">
+  </label></td>
+</tr>
+<tr>
+  <td width="15%">T&iacute;tulo ingl&eacute;s:</td>
+  <td width="85%"><label>
+    <input name="nombre_en" class="casilla" id="nombre_en" type="text" value="#nombre_en#">
+  </label></td>
+</tr>
+
+<tr>
+  <td colspan="2" height="20"></td>
+</tr>
+<tr>
+<td><label for="seccion">Secci&oacute;n</label></td>
+<td><select name="seccion" id="seccion">
+#secciones#
+</select></td>
+</tr>
+<tr>
+<td><label for="tipo">Tipo</label></td>
+<td><select name="tipo" id="tipo">
+#tipos#
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+<input type="hidden" name="idc" id="idc" value="#idc#"/>
+<div id="tabsE">
+<ul>
+<li><a href="javascript:validar();"><span>Actualizar categor&iacute;a</span></a></li>
+<li><a href="index.php/contenidos/listar/#seccion#/"><span>Cancelar</span></a></li>
+</ul>
+</div> 
+</form>

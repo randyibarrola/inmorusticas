@@ -1,0 +1,354 @@
+	.ui-tabs .ui-tabs-hide {
+	     display: none;
+	}
+	
+	#interfacetitle{background: #ddd;	padding: 8px;}
+	#optionstable{
+		width: 920px;
+		margin: 0 auto;
+	}
+
+	#tabs {
+		border: 1px solid #ccc;
+		border-top: none;
+		border-bottom: none;
+		background: #eee;
+	}
+	.tabtitle {
+		padding: 12px 0 0 35px;
+		font-size: 1.3em;
+		font-weight: bold;
+		color: #000;
+		width: 100%;
+	}
+	#tabsnav {
+		float: left;
+		width: 200px;
+		margin:0 -200px 0 0;
+	}
+		#tabsnav li{
+			margin: 0;
+			padding:0;
+		}
+		#tabsnav li a{
+			font-weight:bold;
+			padding: 8px;
+			display: block;
+			text-decoration:none;
+			color: #000;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+		}
+			#tabsnav li a:hover{
+				background:#f7f7f7;
+				margin-top: -1px;
+				padding-top: 9px;
+				border-top: 1px solid #fff;
+				border-left: 1px solid #fff;
+				border-right: none;
+				border-bottom: 1px solid #ddd;
+			}
+			#tabsnav .ui-state-active a, #tabsnav .ui-state-active a:hover{
+					border-top: 1px solid #aaa;
+					border-left: 1px solid #aaa;
+					border-right: none;
+					border-bottom: 1px solid #fff;
+					background: #dedede;
+			}
+			#tabsnav li a span {
+				padding-left: 25px;
+				display: block;
+			}
+			#tabsnav li.listsave {
+				padding: 10px 30px;
+				border-top: 1px solid #ddd;
+				margin-top: 2em;
+				text-align: center;
+			}
+			
+			.custom_images span{background: transparent url(../images/admin/image.png) no-repeat 0 0;}
+			 #custom_images .tabtitle{background: transparent url(../images/admin/image.png) no-repeat 10px 13px;}
+			
+			.sidebar_options span{background: transparent url(../images/admin/sidebar.png) no-repeat 0 0;}
+			#sidebar_options .tabtitle{background: transparent url(../images/admin/sidebar.png) no-repeat 10px 13px;}
+			
+			.display_options span{background: transparent url(../images/admin/color.png) no-repeat 0 0;}
+			#display_options .tabtitle{background: transparent url(../images/admin/color.png) no-repeat 10px 13px;}
+		
+			.header_and_nav span{background: transparent url(../images/admin/header.png) no-repeat 0 0;}
+			#header_and_nav .tabtitle{background: transparent url(../images/admin/header.png) no-repeat 10px 13px;}
+			
+			.pages_and_posts span{background: transparent url(../images/admin/page.png) no-repeat 0 0;}
+			#pages_and_posts .tabtitle{background: transparent url(../images/admin/page.png) no-repeat 10px 13px;}
+			
+			.media_options span{background: transparent url(../images/admin/feed.png) no-repeat 0 0;}
+			#media_options .tabtitle{background: transparent url(../images/admin/feed.png) no-repeat 10px 13px;}
+			
+			.footer_options span{background: transparent url(../images/admin/footer.png) no-repeat 0 0;}
+			#footer_options .tabtitle{background: transparent url(../images/admin/footer.png) no-repeat 10px 13px;}
+			
+			.custom_code span{background: transparent url(../images/admin/code.png) no-repeat 0 0;}
+			#custom_code .tabtitle{background: transparent url(../images/admin/code.png) no-repeat 10px 13px;}
+			
+			.feature_settings span{background: transparent url(../images/admin/wrench.png) no-repeat 0 0;}
+			#feature_settings .tabtitle{background: transparent url(../images/admin/wrench.png) no-repeat 10px 13px;}
+			
+			.miscellaneous span{background: transparent url(../images/admin/star.png) no-repeat 0 0;}
+			#miscellaneous .tabtitle{background: transparent url(../images/admin/star.png) no-repeat 10px 13px;}
+			
+			.feature span{background: transparent url(../images/admin/docf.png) no-repeat 0 0;}
+			.featuretab .tabtitle{background: transparent url(../images/admin/docf.png) no-repeat 10px 13px;}
+			
+			.fbox1 span,.fbox2 span,.fbox3 span,.fbox4 span,.fbox5 span{background: transparent url(../images/admin/docb.png) no-repeat 0 0;}
+			#fbox1 .tabtitle,#fbox2 .tabtitle,#fbox3 .tabtitle,#fbox4 .tabtitle,#fbox5 .tabtitle{background: transparent url(../images/admin/docb.png) no-repeat 10px 13px;}
+			
+			#tabsnav.readme li a span{background: transparent url(../images/admin/bullet_black.png) no-repeat 0 0;}
+			#welcome .tabtitle{background: transparent url(../images/admin/compass.png) no-repeat 10px 13px;}
+			
+			#install .tabtitle{background: transparent url(../images/admin/arrow-down.png) no-repeat 10px 13px;}
+			
+			#featurepage .tabtitle{background: transparent url(../images/admin/images-stack.png) no-repeat 10px 13px;}
+			
+			#createposts .tabtitle{background: transparent url(../images/admin/sticky-note-pin.png) no-repeat 10px 13px;}
+			#custompage .tabtitle{background: transparent url(../images/admin/hammer-screwdriver.png) no-repeat 10px 13px;}
+			#themeoptions .tabtitle{background: transparent url(../images/admin/tick.png) no-repeat 10px 13px;}
+			
+			#ads .tabtitle{background: transparent url(../images/admin/money.png) no-repeat 10px 13px;}
+			
+			
+			#flickr .tabtitle{background: transparent url(../images/admin/flickr.png) no-repeat 10px 13px;}
+			
+			#forms .tabtitle{background: transparent url(../images/admin/notebook-arrow.png) no-repeat 10px 13px;}
+			
+			#faq .tabtitle{background: transparent url(../images/admin/question-balloon.png) no-repeat 10px 13px;}
+			
+			
+			.options_intro {
+				
+				margin: 10px 8px ;
+				padding-left: 25px;
+				background: transparent url(../images/admin/leaf.png) no-repeat 0 1px;
+			}
+	
+	#thetabs {
+		margin-left: 200px;
+		width: 720px;
+		background: #f7f7f7;
+		border-left: 1px solid #ccc;
+	}
+
+	.tabinfo {
+		float: left;
+		width: 99%;
+		
+		border-left: 1px solid #fff;
+		border-top:1px solid #fff;
+	}
+	.inforow {
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		padding: 15px;
+		margin: 15px;
+		width:650px;
+	
+	}
+		.inforow p, .inforow ul{
+			font-size: 1em;
+			line-height: 1.3em;
+		}
+		.inforow ul {
+			margin: .4em 0 1em 0;
+		}
+		.inforow ul li{
+			list-style-type: square;
+			margin-left: 20px;
+		}
+	
+	.optionrow {
+		padding: 15px 0;
+		width: 100%;
+	}
+		.optiontitle {
+			padding: 10px 15px;
+			background: #eee;
+			border-top: 1px solid #eaeaea;
+			border-bottom: 1px solid #eaeaea;
+		}
+		
+		.optionicon {
+			float:left;
+			margin: 2px 10px 6px 0;
+		}
+		.optioninputs {
+			margin-left: 40px;
+		}
+		.context {
+			font-size: 11px;
+			font-weight:bold;
+			margin-top: 5px;
+		}
+		.context .button-secondary, .context .button-primary {margin-right: 10px;}
+		
+
+	.theinputs {
+		width: 55%;
+		margin: 0 2%;
+		float: left;
+		text-align: left;
+	}
+	.theinputs .button-primary {
+	}
+	.fullinput {
+		width: 98%;
+		margin: 0 2%;
+		float: left;
+	}
+	.theexplanation {
+		margin: 0 0 0 10px;
+		width: 34%;
+		float:left;
+		border-left: 1px solid #DDD;
+		padding: 10px;
+	}
+	.theexplanation p{
+		font-size: 11px;
+		margin: 5px 0;
+	}
+	
+	
+	.wideinputs .theinputs{
+		width: 697px;
+		margin: 0 10px;
+	}
+	
+	 .wideinputs .theexplanation {
+		border-left: none;
+		margin-left: 50px;
+		width: 580px;
+		background: #efefef;
+		font-size: 11px;
+	}
+	
+		.wideinputs .theexplanation .theexample {
+			width: 200px ;
+			margin-top: -23px;
+			margin-left: 8px;
+			position:relative;
+			float:right;
+			padding: 10px ;
+			border: 1px solid #ddd;
+			background: #e5e5e5;
+		}
+
+	.optionrestore {
+		padding: 5px;
+		color: #999;
+	}
+	#optionsheader {
+		background: #eee url(../images/admin/bg_optionheader.gif) repeat-x left bottom;
+		border: 1px solid #ccc;
+		border-top: none;
+		border-bottom: 1px solid #aaa;
+	}
+	#optionsheader p{
+		margin: 0;
+		
+	}
+	#optionsfooter{
+		background: #eee;
+		border: 1px solid #ccc;
+		border-top: none;
+		margin-bottom: 1em;
+	}
+	#optionsfooter .theinputs{
+		width: 93%;
+		padding: 10px;
+		text-align:right;
+	}
+	#optionsfooter .button-primary {
+	}
+	
+/* PAGE OPTIONS */
+
+.page_option {
+	background: #f7f7f7;
+	margin: 10px 20px;
+	padding: 5px 8px 5px 27px;
+	border: 1px solid #eee;
+}
+	.page_option .admin_checkbox{margin-left:-20px;float:left;display:inline;}
+	.page_option p{
+		margin: 2px 0;
+	}
+	.page_option .page_option_text_exp{
+		float:left;
+		padding: 16px 10px 16px 0;
+		width: 40%;
+	}
+	.page_option textarea {
+		float:left;
+		width: 50%;
+		height: 80px;
+		margin:4px 0;
+		font-size: 10px;
+	}
+/* universal stuff */
+#tabs textarea, #tabs input, #tabs select, .page_option textarea, .page_option input, .page_option select{
+	border-color: #ccc;
+}
+	#tabs textarea{
+		font-size: 11px;
+		width: 94%;
+	}
+	#tabs textarea.longtext{
+		height: 170px;
+	}
+	#tabs option {
+		
+			font-size: 1.1em;
+		padding: 3px 6px;
+	}
+	#tabs .admin_checkbox {
+		display: block;
+		float: left;
+		margin: 2px 0 0 -20px;
+	}
+	#tabs .regular-text {width: 90%;}
+	.border{
+		border: 1px solid #ddd;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.hl, .hl2 {
+		background: url(../images/hl-dot.gif) repeat-x top;
+		clear: both;
+		height: 2px;
+		overflow: hidden;
+		width: 100%;
+	}
+	
+	.imagerow {
+		border-top: 1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		background: #eee;
+		padding: 15px;
+		margin: .5em 0 1em 0;
+	}
+	.alignright {
+		float: right;
+		margin-left: 15px;
+		margin-bottom: 10px;
+	}
+	.alignleft {
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+	
+	.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.fix{display:inline-block;} 
+	* html .fix{height:1%;}
+	.fix{display:block;}
+

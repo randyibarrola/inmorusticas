@@ -1,0 +1,1 @@
+[06-Mar-2013 04:47:09] PHP Fatal error:  Call to undefined function  _deprecated_file() in /home/inmorust/public_html/blog/wp-includes/registration-functions.php on line 7

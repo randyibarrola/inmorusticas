@@ -1,0 +1,246 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-size:small;
+margin:0;
+padding:0;
+background-color: #EBEBEB;
+}
+h1 {
+font-size:150%;
+font-weight:bold;
+color: #666666;
+vertical-align: middle;
+float: left;
+padding-bottom: 10px;
+width: 100%;
+margin: 0px;
+}
+h2 {
+font-size:16px;
+font-weight:bold;
+color: #333333;
+margin: 0px;
+border-bottom-width: 1px;
+border-bottom-style: dotted;
+border-bottom-color: #CCCCCC;
+background-image: url(../img/cor.gif);
+background-repeat: no-repeat;
+background-position: left center;
+float: left;
+width: 100%;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 10px;
+padding-left: 0px;
+}
+#contenedor {
+width:890px;
+font-size:100%;
+margin-top: 15px;
+margin-right: auto;
+margin-bottom: 15px;
+margin-left: auto;
+background-color: #FFFFFF;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+border: 1px solid #CCCCCC;
+}
+#contenedor a {
+color: #333333;
+}
+#contenedor a:hover {
+color: #DA251C;
+}
+#cabecera {
+width: 100%;
+margin-bottom: 10px;
+float: left;
+}
+#logo {
+float: left;
+padding-top: 15px;
+}
+#titulo_administracion {
+float: right;
+font-size: 180%;
+color: #7B7979;
+width: 450px;
+text-align: right;
+padding-top: 30px;
+font-weight: bold;
+}
+#txt_inicio {
+float:left;
+width:100%;
+text-align:center;
+padding:100px 0 100px;
+font-size:30px;
+color: #CCCCCC;
+}
+#menu_header {
+float: left;
+font-weight: bold;
+width: 100%;
+padding-top: 15px;
+padding-bottom: 4px;
+}
+#menu_header ul {
+padding: 0px;
+margin: 0px;
+border-left-width: 1px;
+border-left-style: dotted;
+border-left-color: #999999;
+}
+#menu_header  li {
+list-style:none;
+display:inline;
+margin: 0px;
+padding: 0px;
+}
+#menu_header  li  a {
+text-decoration:none;
+color: #666666;
+padding-left: 5px;
+height: 25px;
+padding-right: 5px;
+padding-bottom: 2px;
+border-right-width: 1px;
+border-right-style: dotted;
+border-right-color: #999999;
+margin: 0px;
+}
+#menu_header  li  a:hover {
+text-decoration:none;
+color: #DA251C;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #DA251C;
+padding-bottom: 2px;
+}
+#menu_header #seleccionada {
+text-decoration:none;
+color: #FF6600;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #FF6600;
+padding-bottom: 2px;
+}
+.casilla {
+width: 95%;
+font-family: "Trebuchet MS";
+font-size: 100%;
+color: #D32E12;
+}
+#admin {
+float:left;
+width: 100%;
+margin-bottom: 20px;
+}
+#admin_listado {
+font-weight: bold;
+color: #000000;
+padding-bottom: 3px;
+float: left;
+padding-top: 3px;
+width: 100%;
+margin-bottom: 2px;
+border-bottom-width: 1px;
+border-bottom-style: dotted;
+border-bottom-color: #CCCCCC;
+display: block;
+vertical-align: middle;
+}
+#admin_listado_titulo {
+float: left;
+}
+#admin_listado span {
+float: right;
+}
+#tabsE {
+line-height:normal;
+padding-top: 20px;
+font-size: 100%;
+float: left;
+width: 100%;
+      }
+    #tabsE ul {
+padding:0px;
+list-style:none;
+margin: 0;
+      }
+    #tabsE li {
+display:inline;
+margin:0;
+padding:0;
+      }
+    #tabsE a {
+margin:0;
+text-decoration:none;
+padding-top: 0;
+padding-right: 0;
+padding-bottom: 0;
+padding-left: 1px;
+float: left;
+      }
+    #tabsE a span {
+float:left;
+display:block;
+color:#FFF;
+text-align: center;
+padding-top: 4px;
+padding-right: 15px;
+padding-bottom: 4px;
+padding-left: 15px;
+background-color: #A9A9A9;
+font-weight: bold;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabsE a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabsE a:hover span {
+color:#FFF;
+background-color: #DA251C;
+      }
+    #tabsE a:hover {
+      }
+    #tabsE a:hover span {
+background-color: #DA251C;
+      }  
+.casilla600 {
+width: 550px;
+font-family: "Trebuchet MS";
+font-size: 100%;
+color: #D32E12;
+float: right;
+height: 20px;
+}
+.juan {
+font-style: italic;
+color: #CC0000;
+}
+td {
+padding-bottom: 5px;
+}
+#footer {
+clear:both;
+height: 30px;
+background-color: #666666;
+}
+#footer_nav {
+color:#fff;
+font-family: Verdana, sans-serif;
+font-size:85%;
+text-align:center;
+padding-top: 8px;
+display: block;
+}
+#footer_nav a {
+ color:#fff;
+}
+#footer_nav a:hover {
+ text-decoration: none;
+}
+table {
+float: left;
+}

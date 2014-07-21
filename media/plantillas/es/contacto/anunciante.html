@@ -1,0 +1,28 @@
+<script language="JavaScript" type="text/javascript">
+function validar(){
+ d = document.frmContacto;
+ if (d.nombre.value.length<3 || d.correo.value.length<7){
+  window.alert("Introduzca su nombre y e-mail antes de enviar el mensaje por favor");
+  return false;
+ } else {
+  d.submit();
+ }
+}
+</script>
+<div id="form">
+    <form name="frmContacto" id="frmContacto" action="/contactar_anunciante/enviar/" method="POST" onsubmit="validar(); return false;">
+    <ul>
+    <li><label for="nombre">Tu Nombre (*)</label><br/>
+    <input type="text" name="nombre" id="nombre"/><br/></li>
+    <li><label for="telefono">Tu Tel&eacute;fono de contacto </label><br/>
+    <input type="text" name="telefono" id="telefono"/><br/></li>
+    <li><label for="correo">Tu E-Mail de contacto (*)</label><br/>
+    <input type="text" name="correo" id="correo"/><br/></li>
+    <li><label for="mensaje">Mensaje</label><br/>
+    <input type="hidden" name="idc" value="#idc#"/>
+    <textarea name="mensaje" id="mensaje" cols="33" rows="3" style="width:147px"></textarea> <br/>
+    <li><input type="submit" value="Enviar"/></li>
+    </ul>
+    </form>
+    </div>
+  </div>

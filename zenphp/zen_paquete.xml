@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="0.1.1.270">
+  <name>zenphp</name>
+  <summary>Un framework de aplicaciones en PHP</summary>
+  <description>zenphp te permite escribir aplicaciones a partir de XML o,scripts completos en PHP con total libertad. 
+zenphp se puede usar en las siguientes situaciones:
+- para crear un fichero ejecutable de una aplicación PHP-GTK (en conjunción con otros programas)
+- para crear librerías de código (abierto mejor )
+- para proveer a tus clientes de un software que solvente sus problemas: webs cualquier otro tipo
+- para mantener un software que se autocompila y se ejecuta (opcional)
+- para usarlo en sistemas embebidos, donde el espacio de disco es una prioridad
+
+Para consultar el manual de instalación y configuración : blog.zenphp.es</description>
+  <maintainers>
+    <maintainer>
+      <user>juaxix</user>
+      <name>Juan Belon</name>
+      <role>Programador principal</role>
+      <url>https://forja.rediris.es/users/juaxix/</url>
+    </maintainer>
+    <maintainer>
+      <user>zubeldia</user>
+      <name>Álvaro Pérez Zubeldia</name>
+      <url>https://forja.rediris.es/users/zubeldia/</url>
+      <role>Beta-tester</role>
+      <role>Programador Ayudante</role>
+    </maintainer>
+    <maintainer>
+      <user>josejimenez</user>
+      <name>Jose Jiménez López</name>
+      <url>https://forja.rediris.es/users/josejimenez/</url>
+      <role>Beta-tester</role>
+      <role>Programador Senior Ayudante</role>
+    </maintainer>
+  </maintainers>
+  <release> 
+  <version>0.1.1.270</version>
+	<date>2008-04-06</date>
+	<state>stable</state>
+	<notes>
+		+ Mejorado el Generador GTK.
+		+ Solucionados algunos bugs sin importancia
+		+ Compatibilidad para compilar clases de zenphp en el generador, en tiempo de ejecucion.
+	</notes>  
+	<version>0.1.1.260</version>
+	<date>2008-03-31</date>
+	<state>unstable</state>
+	<notes>
+	Fin de las siguientes partes:
+		+ Generador GTK, a falta de depurar detalles e insertar ejemplos
+	Mejoras en los modelos datos
+	Mejor organización de la estructura,renombramiento de ficheros
+	Modificaciones para el gestor de contenidos (CMS)
+	</notes>  
+  </release>
+  <release> 
+	<version>0.1.1.250</version>
+	<date>2008-03-28</date>
+	<state>stable</state>
+	<notes>
+	Fin de las siguientes partes:
+		+ Tests
+		+ Documentacion
+		+ Videotutoriales
+		+ Wikipedia
+	Mejoras en los modelos datos
+	Mejor organización de la estructura
+	Nuevas clases para la administración
+	Inicio del Gestor de contenidos o CMS
+	</notes>  
+  </release>
+   <release>
+	<version>0.1.1.c</version>
+	<date>2008-03-21</date>
+	<state>beta</state>
+	<notes>
+		Fin de las siguientes partes:
+		+ Generador de aplicaciones en Gtk
+		+ Nuevos ejemplos
+	</notes>
+  </release>
+  <release>
+	<version>0.1.1.b</version>
+	<date>2008-03-15</date>
+	<state>beta</state>
+	<notes>
+		Fin de las siguientes partes:
+		+ Zen Andamio
+	</notes>
+  </release>
+  <release>
+  <release>
+  <version>0.1.1.b</version>
+  <date>2008-03-05</date>
+  <state>beta</state>
+  <notes>
+  Inicio de las siguientes partes:
+  + Zen Andamio
+  + Generador PHP/GTK
+  + etc.
+  </notes>
+  </release>
+  <release>
+	  
+    <version>0.1.1</version>
+    <date>2008-02-09</date>
+    <license>LGPL</license>
+    <state>alpha-beta</state>
+    <notes>Versión 0.1.1 con nuevas mejoras
+	* Se añaden clases para manejar monedas
+	* Cesta de la compra
+	* Funciones para subir varios ficheros con PHP
+	* Ayudantes AJAX
+    </notes>
+  </release>
+  <changelog>
+    <release>
+      <version>0.1.0</version>
+      <date>24/01/08</date>
+      <state>beta</state>
+      <notes>+ Creados los scripts para automatizar AJAX desde PHP
++ Aún en fase de pruebas con AJAX.</notes>
+    </release>
+    <release>
+      <version>0.0.9</version>
+      <date>22/01/08</date>
+      <state>beta</state>
+      <notes>+ Añadida la clase para la cesta de la compra que hice para algunas webs hace tiempo ,ahora adaptada para zenphp.
++ Añadida la librería para mostrar contenido en PDF (Cpdf) y Excel.
++ Añadida la clase zen_ajax de forma operativa.
++ Añadida la librería zen_descarga para realizar descargas con PHP.
++ Añadida la librería Twitter.
++ Añadida la librería ExcelWriter.
++ Añadida la librería createZip.
++ Añadidos ejemplos en las librerías.</notes>
+    </release>
+    <release>
+      <version>0.0.8</version>
+      <date>18/01/08</date>
+      <state>beta</state>
+      <notes>+ Se añaden zen_ajax y zen_JSON:(para compatibilidad PHP4 y PHP5)
++ Ideado mecanismo para la generación de proyectos con aplicaciones: modelos,vistas y controladores que lee la configuración de generación desde un XML.
++ Se añade la clase zen_aplicacion_administrador para administrar el contenido del CMS
++ Ver https://forja.rediris.es/pm/task.php?func=detailtask&project_task_id=801&group_id=252&group_project_id=579</notes>
+    </release>
+    <release>
+      <version>0.0.7b</version>
+      <date>11/01/08</date>
+      <state>beta</state>
+      <notes>+ Se usan cabeceras "Accept-Encoding: gzip, deflate" y búferes PHP comprimidos para acelerar
+  las peticiones.
++ Se añade la clase zen_buffer que se usan sólo si la clase de salida de búfer comprimida
+  de PHP no está disponible con las librerías zlib.</notes>
+    </release>
+    <release>
+      <version>0.0.7</version>
+      <date>09/01/2008</date>
+      <state>beta</state>
+      <notes>- Solucionado un bug de la clase plantillas que no daba error cuando se intentaba leer
+  un fichero que estaba vacío
+- Solucionado un bug de la clase plantillas que no devolvía error cuando el fichero 
+  no existía en el caso en que estuviera dentro de una carpeta general de plantillas 
+  y no dentro de una carpeta de idiomas
+- Arreglado un bug del enrutador para que lea correctamente los controladores desde 
+  el directorio inicial
+- Añadida la inicialización del contenido de una web como un array en la clase principal
+  zenphp/clases/clase_zen.php
+- Retirado por el momento la instanciación de la clase zen_config para ahorrar recursos.
+- Realizadas algunas mejoras en clases de los modelos de datos y sus vistas HTML
+- Añadida la clase vista XML : zenphp/clases/clase_zen_xml.php -> zen_xml</notes>
+    </release>
+   <release>
+      <version>0.0.6</version>
+      <date>4/01/2008</date>
+      <state>alpha</state>
+      <notes>- Terminado el enrutador :)
+- Cambios en las plantillas CSS de contenido de zenphp
+- Mejorada la clase del modelo de datos con filtros de pre y post procesamiento
+- Interfaz de errores más "humanizada" XD</notes>
+    </release>
+    <release>
+      <version>0.0.5</version>
+      <date>4/01/2008</date>
+      <state>alpha</state>
+      <notes>- Se ha borrado el manejador de ruta y su inicialización-->cambiada la clase por otra nueva</notes>
+    </release>
+    <release>
+    <version>0.0.4</version>
+    <date>2007-12-04</date>
+    <license>LGPL</license>
+    <state>beta</state>
+    <notes>Versiones prototipo de zenphp, desde la 0.0.1 también conocida como 0.1
+- Con soporte para PHP4,PHP5</notes>
+    <filelist>
+      <file role="doc" md5sum="" name="leeme.txt"/>
+    </filelist>
+  </release>
+  </changelog>
+</package>

@@ -1,0 +1,76 @@
+<script language="JavaScript">
+function validar(){
+ f = document.frmEditar;
+ if (f.titulo_es.value.length<1) alert("Escriba un titulo");
+ else f.submit();
+}
+</script>
+<h1>#nombre_seccion#</h1>
+<h2>#nombre_categoria#</h2>
+<h3>Editar #nombre_seccion#: "#titulo_es#"</h3>
+<div id="formulario">
+<form name="frmEditar" id="frmEditar" action="index.php/contenidos/articulos/#seccion#/#categoria#/actualizar/#seccion#/#idc#/" method="POST" enctype="multipart/form-data">
+<table>
+<tbody>
+<tr><td width="5%"><label for="titulo_es">T&iacute;tulo Espa&ntilde;ol</label></td>
+<td width="95%"><input id="titulo_es" type="text" class="casilla" name="titulo_es" value="#titulo_es#" size="40"></td></tr>
+<tr><td width="5%"><label for="titulo_en">T&iacute;tulo Ingl&eacute;s</label></td>
+<td width="95%"><input id="titulo_en" type="text"  class="casilla" name="titulo_en" value="#titulo_en#" size="40"></td></tr>
+<tr><td width="5%"><label for="titulo_fr">T&iacute;tulo Franc&eacute;s</label></td>
+<td width="95%"><input id="titulo_fr" type="text" class="casilla" name="titulo_fr" value="#titulo_fr#" size="40"></td></tr>
+<tr><td width="5%"><label for="titulo_de">T&iacute;tulo Alem&aacute;n</label></td>
+<td width="95%"><input id="titulo_de" type="text" class="casilla" name="titulo_de" value="#titulo_de#" size="40"></td></tr>
+<tr>
+<td><label for="fecha">Fecha (d/m/a)</label></td>
+<td><input type="text" class="casilla" name="fecha" id="fecha" value="#fecha#"></td>
+</tr>
+<tr><td><label for="tags_es">Etiquetas(por comas) Espa&ntilde;ol</label> </td>
+<td><input type="text" class="casilla" size="40" value="#tags_es#" name="tags_es" id="tags_es"></td>
+</tr>
+<tr><td><label for="tags_en">Etiquetas(por comas) Ingl&eacute;s</label> </td>
+<td><input type="text" class="casilla" size="40" value="#tags_en#" name="tags_en" id="tags_en"></td>
+</tr>
+<tr><td><label for="tags_de">Etiquetas(por comas) Alem&aacute;n</label> </td>
+<td><input type="text" class="casilla" size="40" value="#tags_de#" name="tags_de" id="tags_de"></td>
+</tr>
+<tr><td><label for="tags_fr">Etiquetas(por comas) Franc&eacute;s</label> </td>
+<td><input type="text" class="casilla" size="40" value="#tags_fr#" name="tags_fr" id="tags_fr"></td>
+</tr>
+<tr><td><label for="meta_desc_es">Meta-Desc Espa&ntilde;ol</label> </td>
+<td><input type="text" class="casilla" size="40" value="#meta_desc_es#" name="meta_desc_es" id="meta_desc_es"></td>
+</tr>
+<tr><td><label for="meta_desc_en">Meta-Desc Ingl&eacute;s</label> </td>
+<td><input type="text" class="casilla" size="40" value="#meta_desc_en#" name="meta_desc_en" id="meta_desc_en"></td>
+</tr>
+<tr><td><label for="meta_desc_de">Meta-Desc Alem&aacute;n</label> </td>
+<td><input type="text" class="casilla" size="40" value="#meta_desc_de#" name="meta_desc_de" id="meta_desc_de"></td>
+</tr>
+<tr><td><label for="meta_desc_fr">Meta-Desc Franc&eacute;s</label> </td>
+<td><input type="text" class="casilla" size="40" value="#meta_desc_fr#" name="meta_desc_fr" id="meta_desc_fr"></td>
+</tr>
+<tr>
+  <td width="150">Miniatura (142x95px):</td>
+  <td><input type="file" name="miniatura"/>
+  #miniatura#
+  </td>
+</tr>
+<tr>
+<td><label for="seccion">Secci&oacute;n</label></td>
+<td><select name="seccion" id="seccion">
+#secciones#
+</select></td>
+</tr>
+<tr>
+<td width="150">Archivo PDF:</td>
+  <td><div id="documentos">
+    #documentos#
+    <input type="file" name="documentos[]" id="documento0" />
+    </div>
+  </td>
+</tr>
+<tr><td colspan="2"><a class="boton" href="index.php/contenidos/articulos/#seccion#/#categoria#/listar/">&laquo; Volver </a> <input type="button" onclick="validar();" class="boton" value="Actualizar datos &raquo;"></td></tr>
+</tbody>
+</table>
+<input type="hidden" name="idc" value="#idc#">
+</form>
+</div>

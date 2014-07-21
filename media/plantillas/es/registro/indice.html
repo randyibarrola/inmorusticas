@@ -1,0 +1,39 @@
+<h1>Reg&iacute;strate en inmorusticas.com</h1>
+
+<p>Para poder promocionar tus anuncios en el mapa</p>
+
+<form action="/registro/crear-cuenta/" method="post">
+<div id="opciones_ext" style="display: none;">
+	   <p><label for="nombre">Nombre</label><br/>
+   <input id="nombre" name="nombre" maxlength="150" size="30" type="text"/></p>
+   <p><label for="contacto">Persona de contacto</label><br/>
+   <input id="contacto" name="contacto" maxlength="150" size="30" type="text"/></p>
+   <p><label for="web">P&aacute;gina web</label><br/>http://
+   <input id="web" name="web" size="30" type="text"/></p>
+   <p><label for="direccion">Datos de contacto (telefonos, direcci&oacute;n, emails....)</label><br/><textarea cols="60" id="direccion" name="direccion" rows="5"></textarea></p>
+   <p><label for="descripcion">Informaci&oacute;n adicional</label><br/><textarea cols="60" id="descripcion" name="descripcion" rows="5"></textarea></p>
+</div>
+
+<p>Usuario<br/>
+<input id="login" name="login" maxlength="32" size="30" type="text"/></p>
+<p>Tipo de cuenta<br/>
+            <input checked="checked" id="rol_ciudadano" name="rol" value="ciudadano" type="radio" onchange="Element.hide('opciones_ext');"/>
+            <label for="rol_ciudadano">Usuario</label>
+            <input id="rol_asociacion" name="rol" value="asociacion" type="radio" onchange="Element.show('opciones_ext');"/></a>
+            <label for="rol_asociacion">Asociaci&oacute;n</label>
+            <input id="rol_autoridad" name="rol" value="autoridad" type="radio" onchange="Element.show('opciones_ext');"/>
+            <label for="rol_autoridad">Entidad P&uacute;blica</label>
+</p>
+<p><label for="email">Email</label><br/>
+<input id="email" name="email" maxlength="175" size="30" type="text"/></p>
+
+<p>Clave de acceso<br/>
+<input id="password" name="password" maxlength="8" size="30" type="password"/></p>
+
+<p>Confirmar Clave de acceso<br/>
+<input id="password_confirma" maxlength="8" name="password_confirma" size="30" type="password"/></p>
+<br/><br/>
+</p>  
+
+<p><input name="commit" value="Enviar" type="submit"/></p>
+</form>

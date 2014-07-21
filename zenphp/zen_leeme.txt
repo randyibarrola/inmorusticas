@@ -1,0 +1,9 @@
+Gracias por descargarte zenphp.
+Para ver el registro de cambios e información de la versión que te has descargado, abre el fichero paquete.xml de este mismo directorio con un editor de texto.
+
+PASOS PARA LA INSTALACIÓN Y CONFIGURACIÓN: 
+1 ) zenphp viene instalado.Da permisos de escritura a media/cache si vas a usar cache...
+2 ) Abre zen.php para configurar las 3 constantes iniciales: ZF_SITIO_WEB donde pondrás tu sitio web: http://localhost/web_prueba/, ZF_NOMBRE_SITIO: el nombre de tu sitio web,ZF_CORREO_ADMIN: tu correo para los formularios de contacto.
+Si no vas a usar el enrutador por defecto ($aplicacion_zen->enrutador->delegar()) es mejor que lo especifiques para que no se carge la clase. zenphp se basa en ahorrar la carga e instanciación de clases que no necesita ya que se van sumando microsegundos de cargas y se multiplican por todas las peticiones para cada uno de los usuarios y resulta en una gran carga, así está mejor :)
+3 ) Crea tu aplicación y lanzala http://localhost/web_prueba/ :)
+

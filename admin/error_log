@@ -1,0 +1,5 @@
+[25-May-2010 20:05:57] PHP Parse error:  syntax error, unexpected T_STRING in /home/inmorust/public_html/map/admin/index.php on line 7
+[11-Jun-2010 06:32:15] PHP Parse error:  syntax error, unexpected ';', expecting '=' in /home/inmorust/public_html/map/aplicaciones/modelos/contenidos_admin.php on line 62
+[19-Jul-2010 19:42:31] PHP Fatal error:  Call to a member function seleccion() on a non-object in /home/inmorust/public_html/map/zenphp/clases/clase_zen_modelo_datos.php on line 145
+[19-Jul-2010 19:43:06] PHP Fatal error:  Call to a member function seleccion() on a non-object in /home/inmorust/public_html/map/zenphp/clases/clase_zen_modelo_datos.php on line 145
+[19-Jul-2010 19:43:42] PHP Fatal error:  Call to a member function devolver_contenido() on a non-object in /home/inmorust/public_html/map/aplicaciones/ruralvia_admin.php on line 202

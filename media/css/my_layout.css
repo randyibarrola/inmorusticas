@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
+ * (en) central stylesheet
+ * (de) zentrales Stylesheet
+ *
+ * @creator       YAML Builder V1.2 (http://builder.yaml.de)
+ * @file          my_layout.css
+ * @-yaml-minver  3.2
+ * 
+ */
+/* import core styles | Basis-Stylesheets einbinden */
+@import url(/media/js/yaml/yaml/core/base.css);
+/* import screen layout | Screen-Layout einbinden */
+@import url(/media/js/yaml/yaml/navigation/nav_shinybuttons.css);
+@import url(/media/js/yaml/yaml/screen/basemod.css);
+@import url(/media/js/yaml/yaml/screen/content.css);
+/* import print layout | Druck-Layout einbinden */
+@import url(/media/js/yaml/yaml/print/print_draft.css);
+#localizador  {
+border:1px dotted silver;
+margin:auto;
+padding:0;
+text-align:center;
+}
+.localizador_grande {
+ width: auto; 
+ height: 688px;
+}
+.localizador_mediano {
+float:left;
+width:auto;
+height:400px;
+/*width:500px;*/
+}
+.ficha {
+line-height:1.3;
+}
+.ficha .column-1 {
+/*float:left;*/
+width:40% !important;
+}
+.ficha .column-2 {
+float:right;
+padding:0 17px;
+width:60% !important;
+}
+.column-2 {
+float:right;
+width:300px;
+}
+.ficha .caja {
+background:url("../images/bg_caja_ficha_bottom.gif") no-repeat scroll left bottom transparent;
+margin:0 0 20px;
+overflow:hidden;
+padding:0 0 12px;
+}
+.ficha .titulo {
+background:url("../images/bg_caja_ficha_top.gif") no-repeat scroll 0 0 transparent;
+color:#000000;
+font-size:1.4em;
+font-weight:bold;
+height:23px;
+padding:9px 12px 0 14px;
+}
+.ficha .referencia {
+color:#666666;
+float:right;
+font-size:0.85em;
+padding:2px 0 0;
+}
+.ficha .titulo h2 {
+background:none repeat scroll 0 0 transparent;
+font-size:1em;
+height:auto;
+padding:0;
+}
+.ficha .caja .box {
+border-color:-moz-use-text-color #E7E7F9;
+border-left:1px solid #E7E7F9;
+border-right:1px solid #E7E7F9;
+border-style:none solid;
+border-width:medium 1px;
+height:auto;
+overflow:hidden;
+padding:20px !important;
+}
+.ficha #datosBasicos .intro {
+font-size:1.4em;
+padding:0 0 10px;
+}
+.ficha #datosBasicos .direccion {
+border-bottom:1px solid #EFEFFA;
+font-size:1.2em;
+margin:0 0 10px;
+padding:0 0 20px;
+}
+.ficha #datosBasicos .precio {
+font-size:1.2em;
+}
+.ficha .caja .box {
+border-style:none solid;
+}
+.ficha {
+line-height:1.3;
+}
+.ficha #datosBasicos .alquilado-por {
+float:right;
+font-size:1.1em;
+margin-top:10px;
+text-align:center;
+width:117px;
+}
+.ficha #datosBasicos .contacto {
+background:url("../images/ico_telefono.gif") no-repeat scroll 0 0 transparent;
+float:left;
+font-size:1.1em;
+height:30px;
+margin:10px 0 20px;
+padding:5px 0 0 39px;
+width:330px;
+}
+.boton2 div {
+background:url("../images/bg_boton_bg_blanco_left.gif") no-repeat scroll 0 0 transparent;
+float:left;
+padding:0 0 0 10px;
+}
+.boton2 p {
+background:url("../images/bg_boton_bg_blanco_right_corto.gif") no-repeat scroll right top transparent;
+float:left;
+padding:0 14px 0 0;
+text-align:center;
+width:210px;
+}
+.boton2 div p a {
+background:url("../images/bg_boton_bg_blanco_middle.gif") repeat-x scroll 0 0 transparent;
+color:#FFFFFF;
+display:block;
+font-size:1.4em;
+font-weight:bold;
+line-height:1.3;
+padding:6px 6px 10px;
+text-decoration:none;
+}
+.ficha #infoEsencial .lista1 {
+float:left;
+margin:0 6px 0 0;
+width:250px;
+}
+.ficha #infoEsencial ul li {
+border-bottom:1px solid #EFEFFA;
+overflow:hidden;
+padding:3px 0 2px;
+}
+.ficha #infoEsencial ul li span.campo1 {
+display:block;
+float:left;
+width:150px;
+}
+.ficha #infoEsencial ul li span.campo2 {
+display:block;
+float:right;
+padding-right:5px;
+text-align:right;
+width:50px;
+}
+.ficha #infoEsencial .lista2 {
+float:left;
+width:215px;
+}
+.ficha #infoEsencial .links {
+clear:both;
+float:left;
+width:550px;
+}
+.cabecera-ficha {
+border-bottom:5px solid #EFEFFA;
+height:auto !important;
+margin:11px 0;
+overflow:hidden;
+padding:0 0 3px;
+width:98%;
+}
+.cabecera-ficha .path {
+color:#666666;
+float:left;
+font-size:1.1em;
+line-height:1.2;
+padding:5px 0 12px;
+width:530px;
+}
+.cabecera-ficha h1 {
+clear:left;
+float:left;
+font-size:2.4em;
+font-weight:normal;
+width:530px;
+}
+#otrosLinks {
+margin:0 0 23px;
+}
+.form-alta h2 {
+background:url("../images/casa.png") no-repeat scroll 0 0 transparent;
+padding:10px 0 10px 51px;
+}
+.pasos-alta {
+background:url("../images/pasos/bg_pasos_alta.gif") no-repeat scroll 0 0 transparent;
+height:57px;
+margin:0 0 10px;
+width:726px;
+}
+.pasos-alta #paso1 {
+background:url("../images/pasos/bg_paso1.gif") no-repeat scroll 0px 0 transparent;
+}.pasos-alta #paso2 {
+background:url("../images/pasos/bg_paso2.gif") no-repeat scroll 215px 0 transparent;
+}.pasos-alta #paso3 {
+background:url("../images/pasos/bg_paso3.gif") no-repeat scroll 441px 0 transparent;
+}
+.mapa {
+height:300px; width:520px;
+}
+.pasos-alta li.paso1 {
+padding-left:60px;
+padding-right:30px;
+width:128px;
+}
+.pasos-alta li {
+color:#666666;
+float:left;
+height:48px;
+padding:9px 0 0 56px;
+width:163px;
+}
+.pasos-alta ul {
+ list-style-type:none;
+ height:57px;
+ padding:0 0 0 2px;
+ font-size:10px;
+}
+#anun_gratis{
+ font-weight:bold;
+ font-size:13px;
+ /*color: blue;*/
+}
+#mostrar_form , #cargando1 {
+ display:none;
+}
+#mostrar_form form textarea {
+ width:100%;
+}
+#accesos_rurales {
+margin-top:0;
+position:relative;
+top:43px;
+}
+.ocultar {
+ display:none;
+}
+#frmContacto input, #frmContacto textarea {
+ width: 360px;
+}
+#frmContacto table {
+ width: 560px;
+}

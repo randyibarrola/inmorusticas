@@ -1,0 +1,15 @@
+<script language="JavaScript" type="text/javascript">
+function borrar(){
+ if (confirm("Seguro que desea borrar la zona seleccionada?"))
+  document.location.href = 'index.php/zonas_js/borrar/'+document.getElementById('zonas').value;
+}
+function editar(){
+  document.location.href = 'index.php/zonas_js/editar/'+document.getElementById('zonas').value;
+}
+</script>
+Zonas (cl&uacute;sters) del mapa principal
+<select name="zonas" id="zonas">
+ #zonas#
+</select>
+<br/>
+<a href="index.php/zonas_js/anadir">A&ntilde;adir una zona a la lista</a> | <a href="javascript:borrar()">Borrar seleccionada</a> | <a href="javascript:editar()">Editar zona seleccionada</a>

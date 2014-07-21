@@ -1,0 +1,21 @@
+=================================================================================================
+
+Instalar Plugin Share This:
+
+1-Poner la carpeta share-this en el directorio donde se alojan los plugins /wp-content/plugins/ .
+
+2-Poner el archivo prototype.js en la carpeta /wp-includes/js/ .
+
+3-Activar el plugin en la administracion de tu wordpress.
+
+
+==================================================================================================
+
+Saludos cordiales!!
+
+Andrés "Artux" Scheffer.
+http://www.artux.com.ar
+
+Distribuido desde http://blog.ferca.com
+Hospedaje web, Dominios y Servidores dedicados
+http://www.ferca.com

@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+Options +FollowSymLinks
+AuthName "Administracion InmoRusticas"
+AuthType Basic
+RewriteEngine on
+RewriteBase /
+AuthUserFile /home/inmorust/public_html/admin/.htpasswd
+require valid-user

@@ -1,0 +1,46 @@
+<script language="JavaScript" type="text/javascript">
+function validar(){ 
+ f = document.frmContacto;
+ if (f.nombre.value.length<3 || f.email.value.length<5) alert("Introduzca su nombre y su correo");
+ else f.submit();
+}
+</script>
+<div class="ficha">
+<h1>Contacto</h1>
+<div class="caja">
+<br/>
+<div class="titulo">
+<h2>Utilice el siguiente formulario para realizar una consulta</h2>
+</div>
+<div class="box">
+#mensaje#
+<form action="/contacto/enviar/" method="POST" name="frmContacto" id="frmContacto">
+ <table align="center" width="100%">
+ <tr>
+ <td><label for="nombre">Nombre (*):</label></td>
+ <td><input type="text" maxlength="255" name="nombre" id="nombre"/></td>
+ </tr>
+ <tr>
+ <td><label for="email">E-Mail (*):</label></td>
+ <td><input type="text" maxlength="255" name="email" id="email"/></td>
+ </tr>
+ <tr>
+ <td><label for="empresa">Empresa:</label></td>
+ <td><input type="text" maxlength="255" name="empresa" id="empresa"/></td>
+ </tr>
+ <tr>
+ <td><label for="telefono">Tel&eacute;fono:</label></td>
+ <td><input type="text" maxlength="255" name="telefono" id="telefono"/></td>
+ </tr>
+ <tr>
+ <td><label for="mensaje">Mensaje:</label></td>
+ <td><textarea name="mensaje" id="mensaje" class="caja"></textarea> </td>
+ </tr>
+ </table>
+ <br/>
+ <input type="button" value="Enviar" onclick="validar()"/>
+</form>
+<small>Los campos con (*) son requeridos</small>
+</div>
+</div>
+</div>

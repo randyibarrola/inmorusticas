@@ -1,0 +1,498 @@
+<script language="JavaScript">
+function validar(){
+ f = document.frmEditar;
+ if (f.titulo_es.value.length<1) alert("Escriba un titulo");
+ else f.submit();
+}
+</script>
+<div id="formulario">
+<form name="frmEditar" id="frmEditar" action="index.php/contenidos/articulos/#seccion#/#categoria#/insertar/#seccion#/-1/" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="idc" value="#idc#"/>
+<h1>En Alquiler</h1>
+<h2>#nombre_categoria#</h2>
+<h3>Editar un alquiler de propiedad</h3>
+<table>
+<tbody>
+<tr>
+ <td width="5%"><label for="titulo_es">T&iacute;tulo espa&ntilde;ol</label></td>
+ <td width="95%"><input id="titulo_es" type="text" class="casilla" name="titulo_es" value="#titulo_es#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="tipo_terreno">Tipo terreno</label></td>
+ <td width="95%">
+ <select name="tipo_terreno" id="tipo_terreno">
+  #tipos_terreno#
+ </select>
+ </td>
+</tr>
+<tr>
+ <td width="5%"><label for="titulo_es">Tipo propietario</label></td>
+ <td width="95%">
+ <select name="tipo_propietario" id="tipo_propietario">
+  #tipos_propietario#
+ </select>
+ </td>
+</tr>
+<tr>
+ <td width="5%"><label for="nombre_contacto">Nombre del contacto:</label></td>
+ <td width="95%"><input id="nombre_contacto" type="text" id="nombre_contacto" class="casilla" name="nombre_contacto"  size="40" value="#nombre_contacto#"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="e_mail_contacto">E-mail del contacto:</label></td>
+ <td width="95%"><input id="e_mail_contacto" type="text" id="e_mail_contacto" class="casilla" name="e_mail_contacto" value="#e_mail_contacto#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="tlf_contacto">Tel&eacute;fono del contacto:</label></td>
+ <td width="95%"><input id="tlf_contacto" type="text" id="tlf_contacto" class="casilla" name="tlf_contacto" value="#tlf_contacto#" size="40">
+ </td>
+</tr>
+<tr>
+ <td width="5%"><label for="edificabilidad">Edificabilidad m<sup>2</sup>:</label></td>
+ <td width="95%"><input id="edificabilidad" type="text" id="edificabilidad" class="casilla" name="edificabilidad" value="#edificabilidad#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="precio_pp_m">Precio por m:</label></td>
+ <td width="95%"><input id="precio_pp_m" type="text" id="precio_pp_m" class="casilla" name="precio_pp_m" value="#precio_pp_m#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="fecha_tasacion">Fecha de tasaci&oacute;n:</label></td>
+ <td width="95%"><input id="fecha_tasacion" type="text" id="fecha_tasacion" class="casilla" name="fecha_tasacion" value="#fecha_tasacion#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="tasa_oficial">Tasada oficialmente en &euro;:</label></td>
+ <td width="95%"><input id="tasa_oficial" type="text" id="tasa_oficial" class="casilla" name="tasa_oficial" value="#tasa_oficial#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="ref_catastral">Referencia catastral:</label></td>
+ <td width="95%"><input id="ref_catastral" type="text" id="ref_catastral" class="casilla" name="ref_catastral" value="#ref_catastral#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="datos_registrales">Datos registrales:</label></td>
+ <td width="95%"><input id="datos_registrales" value="#datos_registrales#" type="text" id="datos_registrales" class="casilla" name="datos_registrales" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="num_registro">N&uacute;mero de registro:</label></td>
+ <td width="95%"><input id="num_registro" value="#num_registro#" type="text" id="num_registro" class="casilla" name="num_registro" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="num_registral_finca">N&uacute;mero de registro de finca:</label></td>
+ <td width="95%"><input id="num_registral_finca" value="#num_registral_finca#" type="text" id="num_registral_finca" class="casilla" name="num_registral_finca" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="tomo">Tomo:</label></td>
+ <td width="95%"><input id="tomo" type="text" value="#tomo#" id="tomo" class="casilla" name="tomo" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="libro">Libro:</label></td>
+ <td width="95%"><input id="libro" type="text" value="#libro#" id="libro" class="casilla" name="libro" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="folio">Folio:</label></td>
+ <td width="95%"><input id="folio" type="text" value="#folio#" id="folio" class="casilla" name="folio" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="orientacion">Orientaci&oacute;n:</label></td>
+ <td width="95%">
+ <select name="orientacion" id="orientacion">
+  #orientaciones#
+ </select>
+ </td>
+</tr>
+<tr>
+ <td width="5%"><label for="municipio">Municipio:</label></td>
+ <td width="95%"><input id="municipio" value="#municipio#" type="text" id="municipio" class="casilla" name="municipio" size="40"></td>
+</tr>
+
+<tr>
+ <td width="5%"><label for="licencia_actividad">Licencia de actividad:</label></td>
+ <td width="95%"><input id="licencia_actividad" value="#licencia_actividad#" type="checkbox" id="licencia_actividad" class="casilla" name="licencia_actividad" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="licencia_apertura">Licencia de apertura:</label></td>
+ <td width="95%"><input id="licencia_apertura" value="#licencia_apertura#" type="checkbox" id="licencia_apertura" class="casilla" name="licencia_apertura" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="otras_licencias">Otras licencias</label></td>
+ <td width="95%"><textarea style="width:100%" id="otras_licencias" name="otras_licencias" cols="85" rows="4">#otras_licencias#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="servidumbres">Servidumbres:</label></td>
+ <td width="95%"><input id="servidumbres" #servidumbres# type="checkbox" id="servidumbres" class="casilla" name="servidumbres" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="caracteristicas_fisicas">Caracter&iacute;sticas f&iacute;sicas:</label></td>
+ <td width="95%">
+ <select name="caracteristicas_fisicas" id="caracteristicas_fisicas">
+  #_caracteristicas_fisicas#
+ </select>
+ </td>
+</tr>
+<tr>
+ <td width="5%"><label for="restaurante">Restaurante:</label></td>
+ <td width="95%"><input id="restaurante" #restaurante# type="checkbox" id="restaurante" class="casilla" name="restaurante" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="spa">SPA:</label></td>
+ <td width="95%"><input id="spa" type="checkbox" #spa# id="spa" class="casilla" name="spa" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="piscina">Piscina:</label></td>
+ <td width="95%"><input id="piscina" type="checkbox" id="piscina" #piscina# class="casilla" name="piscina" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="cafeteria">Cafeter&iacute;a:</label></td>
+ <td width="95%"><input id="cafeteria" type="checkbox" #cafeteria# id="cafeteria" class="casilla" name="cafeteria" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="bar">Bar:</label></td>
+ <td width="95%"><input id="bar" type="checkbox" id="bar" #bar# class="casilla" name="bar" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="capilla">Capilla:</label></td>
+ <td width="95%"><input id="capilla" type="checkbox" id="capilla" #capilla# class="casilla" name="capilla" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="jardines">Jardines:</label></td>
+ <td width="95%"><input id="jardines" type="checkbox" id="jardines" #jardines# class="casilla" name="jardines" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="sala_banquetes">Sala de banquetes:</label></td>
+ <td width="95%"><input id="sala_banquetes" type="checkbox" id="sala_banquetes" #sala_banquetes# class="casilla" name="sala_banquetes" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="otros_servicios_es">Otros servicios espa&ntilde;ol</label></td>
+ <td width="95%"><textarea style="width:100%" id="otros_servicios_es" #otros_servicios_es# name="otros_servicios_es" cols="85" rows="4"></textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="otros_servicios_en">Otros servicios ingl&eacute;s</label></td>
+ <td width="95%"><textarea style="width:100%" id="otros_servicios_en" #otros_servicios_en# name="otros_servicios_en" cols="85" rows="4"></textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="vistas">Vistas:</label></td>
+ <td width="95%"><input id="vistas" #vistas# type="checkbox" id="vistas" class="casilla" name="vistas" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="flora">Flora:</label></td>
+ <td width="95%"><textarea  style="width:100%" name="flora" cols="85" rows="4" id="flora">#flora#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="fauna">Fauna:</label></td>
+ <td width="95%"><textarea  style="width:100%" name="fauna" cols="85" rows="4" id="fauna">#fauna#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="accesos">Accesos</label></td>
+ <td width="95%"><textarea style="width:100%" id="accesos" name="accesos" cols="85" rows="4">#accesos#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="comunicaciones">Comunicaciones</label></td>
+ <td width="95%"><textarea style="width:100%" id="comunicaciones" name="comunicaciones" cols="85" rows="4">#comunicaciones#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="distancia_pueblo_cercano">Distancia pueblo cercano</label></td>
+ <td width="95%"><input id="distancia_pueblo_cercano" type="text" class="casilla" name="distancia_pueblo_cercano" value="#distancia_pueblo_cercano#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="ciudades_proximas">Ciudades pr&oacute;ximas</label></td>
+ <td width="95%"><input id="ciudades_proximas" type="text" class="casilla" name="ciudades_proximas" value="#ciudades_proximas#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="tecnologia">Tecnolog&iacute;a</label></td>
+ <td width="95%"><input id="tecnologia" type="text" class="casilla" name="tecnologia" value="#tecnologia#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="ascensores">Ascensores:</label></td>
+ <td width="95%"><input id="ascensores" type="checkbox" id="ascensores" #ascensores# class="casilla" name="ascensores" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="decoracion">Decoraci&oacute;n:</label></td>
+ <td width="95%"><select name="decoracion" id="decoracion">
+ #decoraciones#
+ </select></td>
+</tr>
+<tr>
+ <td width="5%"><label for="historia_hotel_es">Historia del hotel espa&ntilde;ol</label></td>
+ <td width="95%"><textarea style="width:100%" id="historia_hotel_es" name="historia_hotel_es" cols="85" rows="4">#historia_hotel_es#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="historia_hotel_en">Historia del hotel ingl&eacute;s</label></td>
+ <td width="95%"><textarea style="width:100%" id="historia_hotel_en" name="historia_hotel_en" cols="85" rows="4">#historia_hotel_en#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="num_habitaciones_ampliar">Num.habitaciones a ampliar</label></td>
+ <td width="95%"><input id="num_habitaciones_ampliar" type="text" class="casilla" name="num_habitaciones_ampliar" value="#num_habitaciones_ampliar#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="nuevas_instalaciones_posibles">Nuevas instalaciones posibles</label></td>
+ <td width="95%"><textarea id="nuevas_instalaciones_posibles" class="casilla" name="nuevas_instalaciones_posibles">#nuevas_instalaciones_posibles#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="numero_plazas">N&uacute;mero plazas</label></td>
+ <td width="95%"><input id="numero_plazas" type="text" class="casilla" name="numero_plazas" value="#numero_plazas#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="facturacion_anual">Facturaci&oacute;n anual</label></td>
+ <td width="95%"><input id="facturacion_anual" type="text" class="casilla" name="facturacion_anual" value="#facturacion_anual#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="porcentaje_ocupacion">Porcentaje de ocupaci&oacute;n</label></td>
+ <td width="95%"><input id="porcentaje_ocupacion" type="text" class="casilla" name="porcentaje_ocupacion" value="#porcentaje_ocupacion#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="anio_construccion">A&ntilde;o de construcci&oacute;n</label></td>
+ <td width="95%"><input id="anio_construccion" type="text" class="casilla" name="anio_construccion" value="#anio_construccion#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="anio_ultima_reforma">A&ntilde;o de &uacute;ltima reforma</label></td>
+ <td width="95%"><input id="anio_ultima_reforma" type="text" class="casilla" name="anio_ultima_reforma" value="#anio_ultima_reforma#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="recursos_turisticos">Recursos tur&iacute;sticos:</label></td>
+ <td width="95%"><textarea id="recursos_turisticos" class="casilla" name="recursos_turisticos">#recursos_turisticos#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="motivo_venta">Motivo de venta</label></td>
+ <td width="95%"><input id="motivo_venta" type="text" class="casilla" name="motivo_venta" value="#motivo_venta#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="aceptaria_alquiler">Aceptar&iacute;a alquiler:</label></td>
+ <td width="95%"><input id="aceptaria_alquiler" type="checkbox" id="aceptaria_alquiler" #aceptaria_alquiler# class="casilla" name="aceptaria_alquiler" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="aceptaria_alquiler_compra">Aceptar&iacute;a opci&oacute;n compra con alquiler:</label></td>
+ <td width="95%"><input id="aceptaria_alquiler_compra" type="checkbox" #aceptaria_alquiler_compra# id="aceptaria_alquiler_compra" class="casilla" name="aceptaria_alquiler_compra" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="aceptaria_permuta">Aceptar&iacute;a permuta:</label></td>
+ <td width="95%"><input id="aceptaria_permuta" #aceptaria_permuta# type="checkbox" id="aceptaria_permuta" class="casilla" name="aceptaria_permuta" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="aceptaria_otras">Aceptar&iacute;a otras formas de alquiler:</label></td>
+ <td width="95%"><input id="aceptaria_otras" #aceptaria_otras# type="checkbox" id="aceptaria_otras" class="casilla" name="aceptaria_otras" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="notas_es">Notas espa&ntilde;ol</label></td>
+ <td width="95%"><textarea style="width:100%" id="notas_es" name="notas_es" cols="85" rows="4">#notas_es#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="notas_en">Notas ingl&eacute;s</label></td>
+ <td width="95%"><textarea style="width:100%" id="notas_en" name="notas_en" cols="85" rows="4">#notas_en#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="estado_conservacion">Estado de conservaci&oacute;n</label></td>
+ <td width="95%"><input id="estado_conservacion" type="text" class="casilla" name="estado_conservacion" value="#estado_conservacion#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="sala_reuniones">Sala de reuniones:</label></td>
+ <td width="95%"><input id="sala_reuniones" type="checkbox" id="sala_reuniones" #sala_reuniones# class="casilla" name="sala_reuniones" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="licencia_obra">Licencia de obra:</label></td>
+ <td width="95%"><input id="licencia_obra" type="checkbox" id="licencia_obra" #licencia_obra# class="casilla" name="licencia_obra" value="1"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="intro_es">Texto introductorio espa&ntilde;ol</label></td>
+ <td width="95%"><textarea style="width:100%" id="intro_es" name="intro_es" cols="85" rows="4">#intro_es#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="descripcion_es">Descripci&oacute;n espa&ntilde;ol</label></td>
+ <td width="95%"><textarea style="width:100%" id="descripcion_es" name="descripcion_es" cols="85" rows="4">#descripcion_es#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="titulo_en">T&iacute;tulo ingl&eacute;s</label></td>
+ <td width="95%"><input id="titulo_en" type="text" class="casilla" name="titulo_en" value="#titulo_en#" size="40"></td>
+</tr>
+<tr>
+ <td width="5%"><label for="intro_en">Texto introductorio ingl&eacute;s</label></td>
+ <td width="95%"><textarea style="width:100%" id="intro_en" name="intro_en" cols="85" rows="4">#intro_en#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="descripcion_en">Descripci&oacute;n ingl&eacute;s</label></td>
+ <td width="95%"><textarea style="width:100%" id="descripcion_en" name="descripcion_en" cols="85" rows="4">#descripcion_en#</textarea></td>
+</tr>
+<tr>
+ <td width="5%"><label for="direccion">Direcci&oacute;n</label></td>
+ <td width="95%"><input id="direccion" type="text" class="casilla" name="direccion" value="#direccion#" size="40"></td>
+</tr>
+<tr>
+<td width="5%"><label for="provincia">Provincia</label></td>
+<td width="95%">
+ <select id="provincia" class="texto" name="provincia">
+<option selected="" value="">-
+  &mdash; Elegir &ndash;</option>
+<option value="Alava">
+  Alava  </option>
+<option value="Albacete">
+  Albacete  </option>
+<option value="Alicante">
+  Alicante  </option>
+<option value="Almeria">
+  Almer&iacute;a  </option>
+<option value="Asturias">
+  Asturias  </option>
+<option value="Avila">
+  Avila  </option>
+<option value="Badajoz">
+  Badajoz  </option>
+<option value="Baleares">
+  Balears (Illes)  </option>
+<option value="Barcelona">
+  Barcelona  </option>
+<option value="Burgos">
+  Burgos  </option>
+<option value="Caceres">
+  C&aacute;ceres  </option>
+<option value="Cadiz">
+  C&aacute;diz  </option>
+<option value="Cantabria">
+  Cantabria  </option>
+<option value="Castellon">
+  Castell&oacute;n/Castell&oacute;  </option>
+<option value="Ceuta">
+  Ceuta  </option>
+<option value="CiudadReal">
+  Ciudad Real  </option>
+<option value="Cordoba">
+  C&oacute;rdoba  </option>
+<option value="Coruna">
+  Coru&ntilde;a (A)  </option>
+<option value="Cuenca">
+  Cuenca  </option>
+<option value="Girona">
+  Girona  </option>
+<option value="Granada">
+  Granada  </option>
+<option value="Guadalajara">
+  Guadalajara  </option>
+<option value="Guipuzcoa">
+  Guip&uacute;zcoa  </option>
+<option value="Huelva">
+  Huelva  </option>
+<option value="Huesca">
+  Huesca  </option>
+<option value="Jaen">
+  Ja&eacute;n  </option>
+<option value="Leon">
+  Le&oacute;n  </option>
+<option value="Lleida">
+  Lleida  </option>
+<option value="Lugo">
+  Lugo  </option>
+<option value="Madrid">
+  Madrid  </option>
+<option value="Malaga">
+  M&aacute;laga  </option>
+<option value="Melilla">
+  Melilla  </option>
+<option value="Murcia">
+  Murcia  </option>
+<option value="Navarra">
+  Navarra  </option>
+<option value="Ourense">
+  Ourense  </option>
+<option value="Palencia">
+  Palencia  </option>
+<option value="Palmas">
+  Palmas (Las)  </option>
+<option value="Pontevedra">
+  Pontevedra  </option>
+<option value="Rioja">
+  Rioja (La)  </option>
+<option value="Salamanca">
+  Salamanca  </option>
+<option value="Santa Cruz de Tenerife">
+  Santa Cruz de Tenerife  </option>
+<option value="Segovia">
+  Segovia  </option>
+<option value="Sevilla">
+  Sevilla  </option>
+<option value="Soria">
+  Soria  </option>
+<option value="Tarragona">
+  Tarragona  </option>
+<option value="Teruel">
+  Teruel  </option>
+<option value="Toledo">
+  Toledo  </option>
+<option value="Valencia">
+  Valencia  </option>
+<option value="Valladolid">
+  Valladolid  </option>
+<option value="Vizcaya">
+  Vizcaya  </option>
+<option value="Zamora">
+  Zamora  </option>
+<option value="Zaragoza">
+  Zaragoza  </option>
+</select>
+<script language="JavaScript" type="text/javascript">
+ v = "#provincia#";
+ p = document.getElementById('provincia');
+ for (i=0; i<p.length; i++) {
+  if (p[i].value==v){
+  	p.selectedIndex = i;
+  	break;
+  }
+ }
+
+</script>
+</td>
+</tr>
+<tr>
+<td><label for="ciudad">Ciudad/Pueblo</label></td>
+<td><input type="text" class="casilla" name="ciudad" id="ciudad" value="#ciudad#"></td>
+</tr>
+<tr>
+<td><label for="ciudad">C&oacute;digo Postal</label></td>
+<td><input type="text" class="casilla" name="cp" id="cp" value="#cp#"></td>
+</tr>
+<tr>
+<td><label for="ccaa">CCAA</label></td>
+<td><select name="ccaa" id="ccaa">
+#ccaas#
+</select></td>
+</tr>
+<tr>
+<td><label for="superficie">Superficie en m<sup>2</sup></label></td>
+<td><input type="text" class="casilla" name="superficie" id="superficie" value="#superficie#"></td>
+</tr>
+<tr>
+<td><label for="habitaciones">N&uacute;mero de habitaciones</label></td>
+<td><input type="text" class="casilla" name="habitaciones" id="habitaciones" value="#habitaciones#"></td>
+</tr>
+<tr>
+<td><label for="fecha">Fecha (d/m/a)</label></td>
+<td><input type="text" class="casilla" name="fecha" id="fecha" value="#fecha#"></td>
+</tr>
+<tr><td><label for="tags">Etiquetas(por comas)</label> </td>
+<td><input type="text" class="casilla" size="40" value="" name="tags" id="tags" value="#tags#"></td>
+</tr>
+<tr><td><label for="meta_desc">Meta-Desc Espa&ntilde;ol</label> </td>
+<td><input type="text" class="casilla" size="40" value="" name="meta_desc" id="meta_desc" value="#meta_desc#"></td>
+</tr>
+<tr>
+<td>
+Localizaci&oacute;n en el Mapa (pinche sobre un punto):
+</td>
+<td>
+<div id="elmapa" style="width: 700px; height: 600px; position: relative; background-color: rgb(229, 227, 223);"></div>
+<label for="lng"><b>Longitud</b></label> 
+<input type="text" class="casilla" size="40" value="" name="lng" id="lng" value="#lng#">
+<label for="lat"><b>Latitud</b></label>
+<input type="text" class="casilla" size="40" value="" name="lat" id="lat" #lat#>
+</td>
+</tr>
+<tr>
+<td width="150">Im&aacute;genes (580x397px)</td>
+  <td><div id="imagenes">
+    #imagenes#
+    <input type="file" name="imagenes[]" id="imagen0" />
+    </div>
+    <span class="juan"><a href="javascript:anadirImagen();"><img border="0" src="img/boton_anadir.gif"/></a></span></td>
+</tr>
+
+<tr><td colspan="2"><a class="boton" href="index.php/contenidos/articulos/#seccion#/#categoria#/listar/#seccion#/">&laquo; Volver </a> <input type="button" onclick="validar();" class="boton" value="Actualizar &raquo;"></td></tr>
+</tbody>
+</table>
+
+</form>
+</div>

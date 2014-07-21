@@ -1,0 +1,225 @@
+
+input{
+
+	background: url(../images/form-field-bg.gif) no-repeat;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	border-left: 1px solid #ccc;
+	font-size:110%;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	padding:5px 3px 3px 5px;
+}
+.button, input[type="submit"], .submit {
+	border-color:#DEDEDE #bbb #bbb #DEDEDE;
+	border-style:solid;
+	border-width:1px;
+	background: #e5e5e5 url(../images/lightgrayup.png) repeat-x left top;
+	margin:0;
+	padding: 2px 3px 1px 5px;
+	color: #666;
+}
+
+.button:hover, input[type="submit"]:hover, .submit:hover {
+
+	color: #000;
+}
+.button:active, input[type="submit"]:active, .submit:active {
+
+		background: #e5e5e5 url(../images/lightgraydown.png) repeat-x left top;
+}
+.blue {
+	border-color:#444 #000 #000 #444;
+	border-style:solid;
+	border-width:1px;
+	background: #072A5A;
+	color: #fff;
+	padding:;
+}
+
+ textarea {
+	border-color:#DEDEDE #bbb #bbb #DEDEDE;
+	border-style:solid;
+	border-width:1px;
+	font: 110% Arial, Helvetica, sans-serif;
+	background:url(../images/form-field-bg.gif) no-repeat;
+
+	padding: 5px 3px 3px 7px;
+}
+
+ textarea:focus{
+	border: solid 1px #999;
+}
+/* comments */
+/* ------------------------------------- comment area  */
+.nocomments {display:none;}
+h3#comments {
+	background: url(../images/icons/comment.png) no-repeat 2px 2px;
+	padding-left: 26px;
+	font-size: 18px;
+	letter-spacing: -.05em;
+	clear: both;
+}
+#respond h3 {
+	background: url(../images/icons/edit.png) no-repeat 0px 5px;
+	padding-left: 26px;
+	margin: 0px;
+	font-size: 18px;
+	letter-spacing: -.05em;
+	clear: both;
+}
+/* commentform */
+#commentform { margin-top: 10px; }
+#commentform label {
+	font-weight: bold;
+	color:#666;
+	font-size: 100%;
+	padding-left: 5px;
+}
+#commentform small {
+	font-size: 90%;
+}
+
+#commentform input{
+	padding: 5px;
+}
+#commentform textarea {
+	width: 480px;
+	height: 140px;
+}
+
+#commentform textarea:focus, #commentform input[type="text"]:focus {
+	border: solid 1px #999;
+}
+
+/* comment list */
+.commentlist {
+	list-style-type:none;
+	margin: 10px 0px 10px 18px;
+	line-height: 130%;
+	padding-left:45px;
+	font-family: helvetica, arial, sans-serif;
+}
+.hentry .commentlist li{
+	padding: 10px;
+	
+}
+.commentlist ul.children {list-style-type: none;margin: .7em;}
+.commentlist ul.children .even {background:#fff;}
+.commentlist .alt {
+
+	background: #F4F4F4;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.commentlist cite {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 110%;
+}
+
+
+.commentlist img.avatar {  float: left;  margin: 0 5px 5px -53px;  position: relative; }
+.commentlist .comment-meta {
+	margin-bottom: 5px;
+	display: block;
+	font-size: 87%;
+}
+.commentlist .comment-meta  a{
+	color: #999999;
+}
+
+
+/* Search form */
+
+#s{
+	background:#FFFFFF url(../images/search.gif) no-repeat scroll left top;
+	border-color:#DEDEDE #FFFFFF #FFFFFF #DEDEDE;
+	border-style:solid;
+	border-width:1px;
+	margin-right:4px;
+	padding:2px 3px 3px 22px;
+	width:196px;
+	color: #666;
+}
+
+/* Rounded corners in anything but IE */
+	.wp-caption, .rounded5{
+		-moz-border-radius: 5px;
+		-khtml-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.rounded10{
+		-moz-border-radius: 5px;
+		-khtml-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+/* Common */
+dt {font-weight:bold;}
+dd {font-style: italic;}
+sup {font-size:.7em;vertical-align: top;}
+sub {font-size:.7em;vertical-align: bottom;}
+acronym, abbr {letter-spacing: .1em;font-weight: bold;}
+
+/* WP stats */
+	#wpstats{width:0px;height:0px;overflow:hidden;}
+
+
+
+/* Add border or hide something */
+	.border{ padding: 2.5px;border: 1px solid #ccc;}
+	.hidden {display: none; visibility: hidden;}
+
+/* Wordpress caption */
+	.wp-caption {
+		text-align: center;
+		margin: 10px;
+		padding: 4px;
+		margin-bottom: 1em;
+	}
+	.wp-caption-text {font-size: 11px; text-align: center; margin:0;padding:6px 3px 2px;line-height: 16px;}
+	.wp-caption img {margin: 0;	padding: 0;	border: 0 none;margin-top: 5px;	}
+	.wp-caption-dd {font-size: 11px;line-height: 17px;	padding: 0 4px 5px;	margin: 0;	}
+
+
+/* FLOATING AND ALIGNMENT */
+	.aligncenter,.alignnone {display: block;margin-left: auto;margin-right: auto;}
+	.center, .textcenter {text-align: center;}
+	.alignleft {float: left;margin:0 1.4em .4em 0;}
+	.left {	float: left; }
+	.textleft {text-align: left;}
+	
+	.alignright {float: right;margin:0 0 .4em 1.4em;}
+	.right { float: right; }
+	.textright {text-align:right;}
+	
+	.clear {clear:both;}
+	
+	.block{display:block;}
+	
+	img.center, img[align="center"] {display: block;margin-left: auto;margin-right: auto;}
+	img.left, img[align="left"] { float:left;margin: 2px 10px 5px 0px;}
+	img.right, img[align="right"] {	float:right;margin: 2px 0px 5px 10px;}
+	
+	
+/* CLEARFIX -- fixes clearing issue for floated elements */
+	.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+	.fix{display:inline-block;} 
+	* html .fix{height:1%;}
+	.fix{display:block;}
+	
+/* PIPED LINKS */
+	.piped { display: block; zoom: 1; padding: 0;margin:0;float: left;text-align: left}
+	.piped:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+	.piped li { float: left; display: inline; }
+	.piped a {padding: 0 0 0 0.5em; margin-left: 0.5em; }
+	.piped .first { border-left: 0 !important; padding-left: 0; margin-left: 0 !important; }
+	.piped small {display:none;}

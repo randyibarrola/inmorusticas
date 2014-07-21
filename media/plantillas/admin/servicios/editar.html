@@ -1,0 +1,36 @@
+<script language="JavaScript" type="text/javascript">
+function validar(){
+ f = document.frmEditar;
+ if (f.titulo_es.value.length<3) {
+ 	alert("Introduce un nombre ");
+ 	return false
+ }
+ else {
+ 	f.submit();
+ 	return true;
+ }
+}
+</script>
+<form action="index.php/servicios_admin/actualizar/#ids#/" method="POST" name="frmEditar" id="frmEditar" onsubmit="validar();">
+<input type="hidden" name="ids" value="#ids#"/>
+<label for="titulo_es">T&iacute;tulo espa&ntilde;ol:</label><br/>
+<input type="text" name="titulo_es" maxlength="150" id="titulo_es" value="#titulo_es#"/><br/>
+<label for="titulo_en">T&iacute;tulo ingl&eacute;s:</label><br/>
+<input type="text" name="titulo_en" id="titulo_en" maxlength="150" value="#titulo_en#"/><br/>
+<br/>
+<label for="intro_es">Introducci&oacute;n Espa&ntilde;ol</label><br/>
+<textarea rows="4" cols="85" name="intro_es" id="intro_es" style="width: 100%;">#intro_es#</textarea>
+<br/>
+<label for="intro_en">Introducci&oacute;n Ingl&eacute;s</label><br/>
+<textarea rows="4" cols="85" name="intro_en" id="intro_en" style="width: 100%;">#intro_en#</textarea>
+<br/>
+<label for="descripcion_es">Descripci&oacute;n Espa&ntilde;ol</label><br/>
+<textarea rows="4" cols="85" name="descripcion_es" id="descripcion_es" style="width: 100%;">#descripcion_es#</textarea>
+<br/>
+<label for="descripcion_en">Descripci&oacute;n Ingl&eacute;s</label><br/>
+<textarea rows="4" cols="85" name="descripcion_en" id="descripcion_en" style="width: 100%;">#descripcion_en#</textarea>
+<br/>
+<label for="fecha">Fecha (dd/mm/aaaa):</label><br/>
+<input type="text" name="fecha" maxlength="150" id="fecha" value="#fecha#"/><br/>
+<input type="button" value="Guardar" onclick="validar();"/>
+</form>

@@ -1,0 +1,189 @@
+.appnitro li{
+width:61%;
+font-size: 110%;
+}
+#form {
+width: 96%;
+}
+form ul
+{
+font-size:100%;
+list-style-type:none;
+margin:0;
+padding:0;
+width:100%;
+}
+.button_text {
+background-color: #272727;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: #FFFFFF;
+cursor: pointer;
+border-top-style: none;
+border-right-style: none;
+border-bottom-style: none;
+border-left-style: none;
+padding-top: 2px;
+padding-right: 5px;
+padding-bottom: 2px;
+padding-left: 5px;
+}
+form li
+{
+display:block;
+margin:0;
+padding:4px 5px 2px 9px;
+position:relative;
+}
+form li:after
+{
+clear:both;
+content:".";
+display:block;
+height:0;
+visibility:hidden;
+}
+* html form li
+{
+height:1%;
+}
+* html .buttons
+{
+height:1%;
+}
+* html form li div
+{
+display:inline-block;
+}
+form li div
+{
+color:#444;
+margin:0 4px 0 0;
+padding:0 0 8px;
+}
+form li span
+{
+color:#444;
+float:left;
+margin:0 4px 0 0;
+padding:0 0 8px;
+}
+form li div.left
+{
+display:inline;
+float:left;
+width:48%;
+}
+form li div.right
+{
+display:inline;
+float:right;
+width:48%;
+}
+form li div.left .medium
+{
+width:100%;
+}
+form li div.right .medium
+{
+width:100%;
+}
+.clear
+{
+clear:both;
+}
+form li div label
+{
+clear:both;
+color:#444;
+display:block;
+font-size:9px;
+line-height:9px;
+margin:0;
+padding-top:3px;
+}
+form li span label
+{
+clear:both;
+color:#444;
+display:block;
+font-size:9px;
+line-height:9px;
+margin:0;
+padding-top:3px;
+}
+.form_description h2
+{
+clear:left;
+font-size:160%;
+font-weight:400;
+margin:0 0 3px;
+}
+.form_description p
+{
+font-size:95%;
+line-height:130%;
+margin:0 0 12px;
+}
+.buttons input
+{
+font-size:120%;
+margin-right:5px;
+}
+/**** Inputs and Labels ****/
+label.description
+{
+border:none;
+color:#222;
+display:block;
+font-size:95%;
+font-weight:700;
+line-height:150%;
+padding:0 0 1px;
+}
+input.text
+{
+border-bottom:1px solid #ddd;
+border-left:1px solid #c3c3c3;
+border-right:1px solid #c3c3c3;
+border-top:1px solid #7c7c7c;
+color:#333;
+font-size:100%;
+margin:0;
+padding:2px 0;
+background-color: #fff;
+background-image: url(../img/shadow.gif);
+background-repeat: repeat-x;
+background-position: top;
+}
+textarea.textarea
+{
+background:#fff url(../img/shadow.gif) repeat-x top;
+border-bottom:1px solid #ddd;
+border-left:1px solid #c3c3c3;
+border-right:1px solid #c3c3c3;
+border-top:1px solid #7c7c7c;
+color:#333;
+font-size:100%;
+margin:0;
+width:99%;
+}
+input.large
+{
+width:99%;
+}
+textarea.medium
+{
+height:10em;
+}
+textarea.large
+{
+height:20em;
+}
+/**** Guidelines and Error Highlight ****/
+form li.highlighted
+{
+background-color:#E8E8E8;
+}
+
+#frmContacto label.error, #frmContacto input.submit { margin-left: 53px; color:red; }

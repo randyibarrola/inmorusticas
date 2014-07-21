@@ -1,0 +1,63 @@
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.next {
+    z-index: 3;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(../images/carousel_navright.png) no-repeat 0 0;
+}
+
+.prev {
+    z-index: 3;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;    
+    background: transparent url(../images/carousel_navleft.png) no-repeat 0 0;
+}
+
+#carouselwrap{
+	-moz-border-radius: 7px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	margin-bottom: 2em;
+}
+
+.carouselcontainer {
+	position: relative;
+	color: #ddd;
+	font-size: 10px;
+    -moz-border-radius: 7px;
+    background: #444 url(../images/carousel_bg.gif) repeat-x 0 0;
+	height: 72px;
+    padding: 30px 67px 25px ;
+	overflow: hidden;
+}
+
+.carouselcontainer ul li{
+	float: left;
+	text-align: center;
+    width: 72px;
+	height: 72px;
+	margin: 0 10px;
+}
+
+.carouselcontainer ul li img {
+	width: 70px;
+	border: 1px solid #666;
+	border-top: 1px solid #555;
+	border-left: 1px solid #555;
+}
+

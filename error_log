@@ -1,0 +1,2 @@
+[18-May-2011 05:35:40] PHP Fatal error:  Out of memory (allocated 65536000) (tried to allocate 12288 bytes) in /home/inmorust/public_html/zenphp/librerias/class.image-resize.php on line 36
+[14-Apr-2012 05:17:50] PHP Fatal error:  Out of memory (allocated 115343360) (tried to allocate 12000 bytes) in /home/inmorust/public_html/zenphp/librerias/class.image-resize.php on line 36

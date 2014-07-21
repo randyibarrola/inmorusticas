@@ -1,0 +1,40 @@
+body{
+    margin:0 !important;
+    padding:0 !important;
+}
+#nirvana{
+    margin-left:5px !important;
+}
+#sidebar{
+    width:314px;
+}
+.the_title abbr.published{
+    float:left !important;
+    margin:0;
+    }
+.pub-month,.day-number,.year-number{
+    display:block;
+    width:70px;
+    text-align:center;
+    line-height:0.8;
+}
+.the_title h3{
+    margin-top:-2em
+}
+#outer-links{
+    width:305px;
+}
+.comment-count{
+    display:none;
+}
+.comment-text{
+    margin-left:58px;
+    padding-left:0;
+}
+dl.comment-meta{
+ width:305px;
+}
+.lst_campos{
+ width: 90%;
+ height: 50px;
+}

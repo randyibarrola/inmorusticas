@@ -1,0 +1,294 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iBlogPro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-12-09 15:57-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrew Powers <andrew@pagelines.com>\n"
+"Language-Team: PageLines\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;_ngettext\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:17
+msgid "No Response &#187;"
+msgstr ""
+
+#: comments.php:17
+msgid "1 Response &#187;"
+msgstr ""
+
+#: comments.php:17
+msgid "to &#8220;"
+msgstr ""
+
+#: comments.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:43
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:43
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:50
+msgid "You must be"
+msgstr ""
+
+#: comments.php:50
+msgid "logged in"
+msgstr ""
+
+#: comments.php:50
+msgid "to post a comment."
+msgstr ""
+
+#: comments.php:57
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:57
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:57
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:62
+msgid "Name"
+msgstr ""
+
+#: comments.php:62
+#: comments.php:65
+msgid "(required)"
+msgstr ""
+
+#: comments.php:65
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:68
+msgid "Website"
+msgstr ""
+
+#: comments.php:73
+msgid "You can use these tags:"
+msgstr ""
+
+#: comments.php:78
+msgid "Submit Comment"
+msgstr ""
+
+#: footer.php:11
+msgid "Looking for something?"
+msgstr ""
+
+#: footer.php:12
+msgid "Use the form below to search the site:"
+msgstr ""
+
+#: footer.php:15
+msgid "Still not finding what you're looking for? Drop a comment on a post or contact us so we can take care of it!"
+msgstr ""
+
+#: footer.php:25
+msgid "Visit our friends!"
+msgstr ""
+
+#: footer.php:25
+msgid "A few highly recommended friends..."
+msgstr ""
+
+#: footer.php:35
+msgid "Archives"
+msgstr ""
+
+#: footer.php:35
+msgid "All entries, chronologically..."
+msgstr ""
+
+#: footer.php:47
+msgid "Home"
+msgstr ""
+
+#: sidebar.php:49
+#: sidebar.php:60
+msgid "No widgets have been added to this sidebar. Add some widgets to your this sidebar in your admin."
+msgstr ""
+
+#: includes/admin/edit_page.php:67
+#: includes/admin/edit_post.php:54
+msgid "Update"
+msgstr ""
+
+#: includes/functions/sidebar_setup.php:58
+msgid "Search"
+msgstr ""
+
+#: includes/plugins/twitter.php:67
+msgid "No recent Twitter posts."
+msgstr ""
+
+#: includes/plugins/twitter.php:97
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/plugins/twitter.php:99
+msgid "Y/m/d"
+msgstr ""
+
+#: includes/plugins/twitter.php:101
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/plugins/twitter.php:101
+msgid "Y/m/d H:i:s"
+msgstr ""
+
+#: includes/plugins/twitter.php:241
+msgid "Twitter Widgets"
+msgstr ""
+
+#: includes/plugins/twitter.php:242
+msgid "How many Twitter widgets would you like?"
+msgstr ""
+
+#: includes/plugins/twitter.php:246
+msgid "Save"
+msgstr ""
+
+#: includes/plugins/twitter.php:260
+#, php-format
+msgid "Twitter #%d"
+msgstr ""
+
+#: includes/pro/template_feature.php:18
+msgid "More"
+msgstr ""
+
+#: library/_authorinfo.php:7
+msgid "About the author"
+msgstr ""
+
+#: library/_authorinfo.php:10
+msgid "Visit Authors Website"
+msgstr ""
+
+#: library/_defaultaccordion.php:3
+msgid "Photos"
+msgstr ""
+
+#: library/_defaultaccordion.php:11
+#: library/_defaultflowbar.php:17
+msgid "Categories"
+msgstr ""
+
+#: library/_defaultaccordion.php:16
+msgid "Tag Cloud"
+msgstr ""
+
+#: library/_defaultaccordion.php:26
+msgid "Meta"
+msgstr ""
+
+#: library/_defaultaccordion.php:32
+msgid "Entries (RSS)"
+msgstr ""
+
+#: library/_defaultaccordion.php:33
+msgid "Comments (RSS)"
+msgstr ""
+
+#: library/_defaultflowbar.php:30
+msgid "Tags"
+msgstr ""
+
+#: library/_pagecontent.php:10
+msgid "<p>Continue reading &raquo;</p>"
+msgstr ""
+
+#: library/_pagecontent.php:11
+msgid "<p><strong>Pages:</strong> "
+msgstr ""
+
+#: library/_pagecontent.php:12
+msgid "Edit"
+msgstr ""
+
+#: library/_post_footer.php:5
+#: library/_post_footer.php:22
+msgid "Edit Post"
+msgstr ""
+
+#: library/_post_footer.php:19
+msgid "View Comments"
+msgstr ""
+
+#: library/_post_footer.php:19
+msgid "Comments"
+msgstr ""
+
+#: library/_post_footer.php:27
+msgid "View Full Post &raquo;"
+msgstr ""
+
+#: library/_post_footer.php:31
+msgid "Leave A Response"
+msgstr ""
+
+#: library/_posts.php:16
+#: library/_posts.php:24
+#: library/_posts.php:31
+msgid "Permanent Link To"
+msgstr ""
+
+#: library/_posts.php:36
+msgid "On"
+msgstr ""
+
+#: library/_posts.php:37
+msgid "In"
+msgstr ""
+
+#: library/_posts.php:38
+msgid "By"
+msgstr ""
+
+#: library/_posts.php:52
+msgid "<p><strong>Pages:</strong>"
+msgstr ""
+
+#: library/_posts.php:52
+msgid "number"
+msgstr ""
+
+#: library/_posts.php:67
+msgid "Tagged with: "
+msgstr ""
+
+#: library/_posts.php:82
+msgid "Nothing Found"
+msgstr ""
+
+#: library/_posts.php:83
+msgid "Sorry, what you are looking for isn't here."
+msgstr ""
+
+#: library/_searchform.php:5
+msgid "Go"
+msgstr ""
+

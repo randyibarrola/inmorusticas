@@ -1,0 +1,28 @@
+<form name="frmContacto" id="frmContacto" method="POST" action="index.php/contacto/?op=1" enctype="multipart/form-data">
+      <h1>Contacto</h1>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td valign="top"><label for="direccion_contacto_es">Direcci&oacute;n:</label></td>
+          <td><textarea name="direccion_contacto_es" rows="10" class="casilla" id="direccion_contacto_es">#direccion_contacto_es#</textarea></td>
+        </tr>
+        
+        <tr>
+          <td valign="top" width="180"><label for="texto_contacto_es">Texto:</label></td>
+          <td><textarea name="texto_contacto_es" rows="10" class="casilla" id="texto_contacto_es">#texto_contacto_es#</textarea></td>
+        </tr>
+        
+        <tr>
+          <td width="180">Imagen galer&iacute;a (580x387px):</td>
+        <td><div id="imagenes">
+            #imagenes#
+            <input type="file" name="imagenes[]" id="imagen0" />
+            </div>
+            <span class="juan"><a href="javascript:anadirImagen();"><img border="0" src="img/boton_anadir.gif"/></a></span></td>
+        </tr>
+      </tbody></table>
+    <div id="tabsE">
+    <ul>
+     <li><a href="javascript:document.frmContacto.submit()"><span>Guardar</span></a></li>
+    </ul>
+</div> 
+</form>

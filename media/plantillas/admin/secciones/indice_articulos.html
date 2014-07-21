@@ -1,0 +1,24 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function publicar(id){
+ XMLRequest.GET("index.php/contenidos_admin/publicar/"+id, "", correcto, fallo);
+}
+function correcto(r){
+ a = eval("("+r.responseText+")");
+ id = a[0].id+"";
+ document.getElementById(id).innerHTML = a[0].html;
+}
+function fallo(){
+ alert("No se ha podido publicar, intentelo mas tarde");
+}
+//-->
+</script>
+<h1>#nombre_seccion#</h1>
+      <h2>#nombre_categoria#</h2>
+      #elementos#
+    <div id="tabsE">
+    <ul>
+    <li><a href="index.php/contenidos/articulos/#seccion#/#categoria#/crear/"><span>A&ntilde;adir art&iacute;culo</span></a></li>
+    <li><a href="index.php/contenidos/listar/#seccion#/#categoria#/"><span>Cancelar</span></a></li>
+  </ul>
+</div> 
