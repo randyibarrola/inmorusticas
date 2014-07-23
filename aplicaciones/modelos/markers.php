@@ -13,7 +13,7 @@ class markers extends zen_modelo_datos {
 	"compra"=>TITULO_COMPRA,
 	 "trueque"=>TITULO_TRUEQUE,
 	 "traspaso"=>TITULO_TRASPASO,
-	 "gratis"=>TITULO_GRATIS,
+//	 "gratis"=>TITULO_GRATIS,
 	 "autopromo"=>TITULO_AUTOPROMO);
 	/**  * @var array  */
 	var $tipos = array("hotel"=>

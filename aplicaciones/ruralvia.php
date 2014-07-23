@@ -32,7 +32,7 @@ class ruralvia extends zen_aplicacion {
   
  }
  /**
-  * Hacemos una interseccion de los dos grupos y si da algún valor, es que tiene permisos
+  * Hacemos una interseccion de los dos grupos y si da algï¿½n valor, es que tiene permisos
   *
   * @param array $grupos_permitidos
   * @param array||null $mis_grupos
@@ -489,7 +489,7 @@ class html_ruralvia extends zen_html {
    	foreach ($unset as $i){
    	 unset($_REQUEST[$i]);
    	}
-   	//Formateo de datos básicos:
+   	//Formateo de datos bï¿½sicos:
   	$_REQUEST['fecha'] = zen_parsear_fecha_a_mysql($_REQUEST['fecha']);
   	
   	$_REQUEST['modificado'] = date("Y-m-d H:i:s");//2009-06-16 10:49:19
@@ -798,7 +798,7 @@ class html_ruralvia extends zen_html {
   	 if (!$idu){
   	  $this->c['contenido'] = TXT_ERROR_LOGIN;
   	 } else {
-  	  //Crear sesión
+  	  //Crear sesiï¿½n
   	  $this->padre->sesiones->iniciar();
   	  $_SESSION['idu'] = $idu['idu'];
   	  $_SESSION['login'] = $idu['login'];
