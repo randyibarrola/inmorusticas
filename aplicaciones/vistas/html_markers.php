@@ -85,22 +85,41 @@ class html_markers extends zen_html_modelo_datos {
    }
   } */
   //---------------------------- PROVINCIA ----------------------------------------------
+  //ALFONSOOOOOOOOOOOOOOOOO MODIFICACION 24/07/2014 Puta busqueda de provincia del caracjo !!!!!!!!!!!!!
   if (isset($_GET['p']) && is_string($_GET['p'])){
-  	if ($_GET['p']!=''){
-  	 $where .= " and lower(c.provincia)='".strtolower(zen_sanar($datos[0]))."'";
+  	if ($_GET['p']!='Todas'){
+  	 //$where .= " and lower(c.provincia)='".strtolower(zen_sanar($datos[0]))."'";
+	 $pov = $_GET['p'];
+	 $where .= " and c.provincia='".$pov."'";
   	}
   }
   
   //---------------------------- HABITACIONES ------------------------------------------------
-  if (isset($_GET['h']) && is_numeric($_GET['h'])){
-   $where .= " and habitaciones>=".abs(intval($_GET['h']));
-   array_shift($datos);
+  //ALFONSOOOOOOOOOOOOOOOOO MODIFICACION 24/07/2014
+  // if (isset($_GET['h']) && is_numeric($_GET['h'])){
+   // $where .= " and habitaciones>=".abs(intval($_GET['h']));
+   // array_shift($datos);
+  // }
+
+  if (isset($_GET['h'])) {
+    if ($_GET['h']!='Cualquiera'){
+		   $habit = abs(intval($_GET['h']));
+		   $where .= " and c.habitaciones>='".$habit."'";
+	}
   }
   //---------------------------- PRECIO  ------------------------------------------------
-  if (isset($_GET['pr']) && is_numeric($_GET['pr'])){ //Precio?
-   $precio = abs(intval($_GET['pr']));
-   $where .= " and precio>=$precio ";
-   array_shift($datos);
+  //ALFONSOOOOOOOOOOOOOOOOO MODIFICACION 24/07/2014
+  // if (isset($_GET['pr']) && is_numeric($_GET['pr'])){ //Precio?
+   // $precio = abs(intval($_GET['pr']));
+   // $where .= " and precio>=$precio ";
+   // array_shift($datos);
+  // }
+  
+   if (isset($_GET['pr'])) { //Precio?
+       if ($_GET['pr']!='0'){
+		   $precio = abs(intval($_GET['pr']));
+		   $where .= " and c.precio<='".$precio."'";
+	   }
   }
 /*
   //--Tipo de transacción:
@@ -116,7 +135,9 @@ class html_markers extends zen_html_modelo_datos {
   $l = $this->padre->padre->idioma;
   $r = $this->padre->bd->seleccion(
   	"c.idc,url_amiga, titulo_$l, imagenes, lat, lng,ca.seccion, intro_$l,".
-  	" url_amiga,provincia,habitaciones,precio,fecha_alta,tipo $campos FROM contenidos c INNER JOIN categorias ca ON categoria = ca.idc $where");
+  	//" url_amiga,provincia,habitaciones,precio,fecha_alta,tipo $campos FROM contenidos c INNER JOIN categorias ca ON categoria = ca.idc $where".
+	//" order by c.idc desc"); //ALF 24/07/2014
+	" url_amiga,provincia,habitaciones,precio,fecha_alta,tipo $campos FROM contenidos c INNER JOIN categorias ca ON categoria = ca.idc $where");
   echo '[';
   $b = false;
   while ($r && $f = $this->padre->bd->obtener_fila($r)) {
@@ -136,6 +157,7 @@ class html_markers extends zen_html_modelo_datos {
    if (!$b) $b = true;
   }
   echo ']';
+  
   if (isset($_GET['debug']))
    $this->padre->bd->mostrar_ultima_consulta();
  }

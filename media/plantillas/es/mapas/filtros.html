@@ -34,8 +34,11 @@ function reportError(){
 <option value="">Cualquiera</option>
 </select>
 <label for="provincia">Provincia:</label>
-<select id="provincia" class="texto" name="provincia" onchange="if (this.value!='') { buscar(true);}">
-<option selected="selected" value="">Todas</option>
+<!-- MODIFICACION ALFONSO 24/07/2014 -->
+<!--<select id="provincia" class="texto" name="provincia" onchange="if (this.value!='') { buscar(true);}">-->
+<!--<option selected="selected" value="">Todas</option>-->
+<select id="provincia" class="texto" name="provincia" onchange="buscar();">
+<option value="Todas">Todas</option>
 <option value="Alava">&Aacute;lava</option>
 <option value="Albacete">Albacete</option>
 <option value="Alicante">Alicante/Alacant</option>
@@ -108,7 +111,7 @@ function reportError(){
 </select>
 <label for="num_habitaciones">N&ordm; Hab. M&iacute;nimo</label>
 <select name="num_habitaciones" id="num_habitaciones" onchange="buscar();">
-<option value="">Cualquiera</option>
+<option value="Cualquiera">Cualquiera</option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>

@@ -17,7 +17,7 @@
 /**
  * ZF_SITIO_WEB          - Sitio web donde se encuentra la aplicacion principal: http://localhost/
  */
-define('ZF_SITIO_WEB', 'http://inmorusticas.local:5801/');
+define('ZF_SITIO_WEB', 'http://www.inmorusticas.com/');
 /**
  * ZF_NOMBRE_SITIO     - Nombre del sitio web actual
  */
@@ -25,7 +25,8 @@ define('ZF_NOMBRE_SITIO', 'Rural Via');
 /**
  * ZF_CORREO_ADMIN     - Correo desde el que se envian los mails en el sistema
  */
-define('ZF_CORREO_ADMIN', 'alejandro@ruralpromo.com'); //substituir
+//define('ZF_CORREO_ADMIN', 'alejandro@ruralpromo.com'); //substituir
+define('ZF_CORREO_ADMIN', 'info@inmorusticas.com'); //substituir
 /**
  * ZF_IDIOMA_DEFECTO   - Idioma por defecto para los directorios y zenphp
  */
