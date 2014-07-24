@@ -114,7 +114,7 @@ class html_ruralvia extends zen_html {
  function mostrar_web($titulo,$menu_seleccionado=''){
   if (!empty($titulo)) $this->c['titulo'] = $titulo;
   $this->construir_menus($menu_seleccionado);
-  parent::index();
+  parent::index($this->c);
  }
  
  function construir_menus($menu_seleccionado){

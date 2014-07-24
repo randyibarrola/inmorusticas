@@ -17,7 +17,7 @@
 /**
  * ZF_SITIO_WEB          - Sitio web donde se encuentra la aplicacion principal: http://localhost/
  */
-define('ZF_SITIO_WEB', 'http://inmorusticas.local');
+define('ZF_SITIO_WEB', 'http://inmorusticas.local:5801/');
 /**
  * ZF_NOMBRE_SITIO     - Nombre del sitio web actual
  */

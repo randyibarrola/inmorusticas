@@ -68,7 +68,10 @@ class zen_html {
 	 * Controlador por defecto
 	 *
 	 */
-	function index(){
+	function index(&$contenido = false){
+        if($contenido) {
+            $this->padre->contenido = $contenido;
+        }
 		$this->mostrar($this->padre->contenido);
 	}
 }
