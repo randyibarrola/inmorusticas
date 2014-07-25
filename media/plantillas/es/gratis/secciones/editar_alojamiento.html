@@ -14,7 +14,7 @@ function validar(){
 <table>
 <tbody>
 <tr>
- <td width="5%"><label for="titulo_es">T&iacute;tulo del anuncio espa&ntilde;ol</label></td>
+ <td width="5%"><label for="titulo_es">T&iacute;tulo del anuncio espa&ntilde;ol (*):</label></td>
  <td width="95%"><input id="titulo_es" type="text" class="casilla" name="titulo_es" value="#titulo_es#" size="40">
  </td>
 </tr>
@@ -94,7 +94,7 @@ function validar(){
  <td width="95%"><input id="direccion" type="text" class="casilla" name="direccion" value="#direccion#" size="40"></td>
 </tr>
 <tr>
-<td width="5%"><label for="provincia">Provincia</label></td>
+<td width="5%"><label for="provincia">Provincia (*):</label></td>
 <td width="95%">
  <select id="provincia" class="texto" name="provincia">
 <option selected="" value="">-
@@ -218,7 +218,9 @@ function validar(){
 </td>
 </tr>
 <tr>
-<td><label for="ciudad">Ciudad/Pueblo</label></td>
+<!--<td><label for="ciudad">Ciudad/Pueblo</label></td>-->
+    <!-- Randy 25/07/2014 Cambiando label por Localidad + i18n (no se puede internacionalizar por el momento porque no funciona la internacionalización para esta vista) -->
+    <td><label for="ciudad">#i18n-localidad#</label></td>
 <td><input type="text" class="casilla" name="ciudad" id="ciudad" value="#ciudad#"></td>
 </tr>
 <tr>
@@ -255,14 +257,14 @@ Localizaci&oacute;n en el Mapa (pinche sobre un punto):
 </td>
 <td>
 <div id="elmapa" style="width: 700px; height: 600px; position: relative; background-color: rgb(229, 227, 223);"></div>
-<label for="lng"><b>Longitud</b></label> 
+<label for="lng"><b>Longitud (*):</b></label>
 <input type="text" class="casilla" size="40" value="" name="lng" id="lng">
-<label for="lat"><b>Latitud</b></label>
+<label for="lat"><b>Latitud (*):</b></label>
 <input type="text" class="casilla" size="40" value="" name="lat" id="lat">
 </td>
 </tr>
 <tr>
-<td width="150">Im&aacute;genes (580x397px)</td>
+<td width="150">Im&aacute;genes (580x397px) (*):</td>
   <td><div id="imagenes">
     #imagenes#
     <input type="file" name="imagenes[]" id="imagen0" />
@@ -270,7 +272,9 @@ Localizaci&oacute;n en el Mapa (pinche sobre un punto):
     <span class="juan"><a href="javascript:anadirImagen();"><img border="0" src="/media/images/boton_anadir.gif"/></a></span></td>
 </tr>
 
-<tr><td colspan="2"><a class="boton" href="index.php/contenidos/articulos/#seccion#/#categoria#/listar/#seccion#/">&laquo; Volver </a> <input type="button" onclick="validar();" class="boton" value="Actualizar &raquo;"></td></tr>
+<tr><td colspan="2">
+    <small>Los campos con (*) son requeridos</small><br/>
+    <a class="boton" href="index.php/contenidos/articulos/#seccion#/#categoria#/listar/#seccion#/">&laquo; Volver </a> <input type="button" onclick="validar();" class="boton" value="Actualizar &raquo;"></td></tr>
 </tbody>
 </table>
 

@@ -293,6 +293,7 @@ class html_ruralvia extends zen_html {
  function poner_anuncio_gratis($datos){
   $op = isset($datos[0])?zen_sanar($datos[0]):"";
   $le = $this->padre->idioma;
+//     var_dump($op);
   switch ($op) {
   	//Solo entrar le mostramos para que elija:
    case "":
@@ -311,6 +312,9 @@ class html_ruralvia extends zen_html {
   	  "zonas_js" => $this->construir_array_zonas_js()
   	 ));
   	 $this->scripts_mapa("gratis");
+         //RANDY 25/07/2014 Agregar i18n de pantalla
+         $this->c['i18n-tlf'] = TXT_TELEFONO_CONFIDENCIAL;
+         $this->c['i18n-dato-obligatorio'] = TXT_DATO_OBLIGATORIO;
   	 break;
    case "seccion": //listado de categorias de una seccion
   	 if (isset($datos[1]) && array_key_exists($datos[1],$this->padre->markers->secciones)){
@@ -352,6 +356,8 @@ class html_ruralvia extends zen_html {
        'orientaciones'      => $this->construir_select("orientacion","contenidos",null),
        'imagenes' 			=> "", 
        'documentos'         => "",
+          //Randy 25/07/2014 Agregando i18n
+          'i18n-localidad' => TXT_LOCALIDAD
       ));
      }
     }
@@ -363,7 +369,11 @@ class html_ruralvia extends zen_html {
 	  $this->c['titulo']  = "Creando nuevo [{$this->padre->markers->secciones[$sec]} ] - $tipo ";
 	  if (!isset($_POST['titulo_'.$le])) {
 	  	$co = "Rellene todos los campos. <a href='javascript:window.history.back();'>Volver</a>";
-	  } else {
+	  }
+      elseif(isset($_FILES['imagenes']) && !$this->validMimeType($_FILES['imagenes'])) {
+          $co = TXT_VALIDAR_IMAGENES.". <a href='javascript:window.history.back();'>".TXT_VOLVER."</a>";
+      }
+      else {
 	  	$this->c['titulo'].= "- ({$_POST['titulo_'.$le]}) - ";
 	  	$_REQUEST['fecha'] = zen_parsear_fecha_a_mysql($_REQUEST['fecha']);
 	  	$_REQUEST['fecha_alta'] = isset($_REQUEST['fecha_alta'])?zen_parsear_fecha_a_mysql($_REQUEST['fecha_alta']):date("Y-m-d");
@@ -431,7 +441,11 @@ class html_ruralvia extends zen_html {
 	  	}
 	  }
 	  $this->c['contenido'] = $this->plantilla->rellena_HTML(
-	  	"gratis/mensaje.html",array("mensaje"=>$co));
+	  	"gratis/mensaje.html",array(
+          "mensaje"=>$co,
+          //RANDY 25/07/2014 Agregando i18n-gracias
+          "i18n-gracias" => TXT_GRACIAS
+      ));
    	break;
    case "editar":
    	$this->c['titulo']    = TITULO_PONER_ANUNCIO;
@@ -461,6 +475,8 @@ class html_ruralvia extends zen_html {
     $editar['decoraciones']     = $this->construir_select("decoracion","contenidos",$editar['decoracion']);
     $editar['orientaciones']    = $this->construir_select("orientacion","contenidos",$editar['orientacion']);
     $editar['imagenes'] 		= $this->padre->markers->html->cargar_imagenes($editar['imagenes'],$ids);
+       //RANDY 25/07/2014 Agregando i18n
+    $editar['i18n-localidad'] 		= TXT_LOCALIDAD;
     //checkbox:
     $chks = array('url_confidencial','licencia_actividad','licencia_apertura','licencia_obra','vistas',
     "restaurante","spa","piscina","cafeteria","bar","capilla","jardines","sala_banquetes","sala_reuniones",
@@ -865,5 +881,29 @@ class html_ruralvia extends zen_html {
  
   echo $this->plantilla->contenido_reemplaza("contacto/base.html",$this->c);
  }
+
+    //RANDY 25/07/2014 Validación previa de tipos de archivos antes de intentar guardar.
+    private function validMimeType($files, $type = 'image', $maxSize = 999999) {
+        $mimes = array();
+        switch($type) {
+            case 'image':
+                $mimes = array("image/jpeg","image/png");
+                break;
+        }
+
+        $flag = true;
+        $types = $files['type'];
+        $sizes = $files['size'];
+        $loop = 0;
+        foreach($types as $t) {
+            if(!in_array($t, $mimes) || $sizes[$loop] > $maxSize) {
+                $flag = false;
+                break;
+            }
+            $loop++;
+        }
+
+        return $flag;
+    }
 }
 ?>

@@ -88,7 +88,8 @@ function validar(){
 }
 //-->
 </script>
-<div class="box" id="mi_anuncio">
+        <!-- RANDY 25/07/2014 Para centrar aregamos un padding left hasta que se implemente bootstrap -->
+<div class="box" id="mi_anuncio" style="padding-left: 20%">
  <div class="content-subheader">
   <h2>Alta de un anuncio gratis</h2>
  </div>
@@ -112,44 +113,105 @@ function validar(){
   <div class="caja">
    <div class="titulo">Caracter&iacute;sticas del anuncio</div>
    <div class="box" >
-    <label for="seccion">Tipo de anuncio:</label>
-    <select name="seccion" id="seccion" onchange="cargar_secciones(this.value);">
-     <option value="">Seleccionar</option>
-      #secciones#
-     </select>
-     <br/>
-     <label for="categoria">Categor&iacute;a:</label>
- 	 <select name="idc" id="categoria">
- 	 <option value="">Seleccione una </option>
-     </select>
-     <br/>
+       <!-- RANDY 25/07/2014 Cambiando el estilo al formulario -->
+       <table align="center" width="100%">
+           <tbody>
+               <tr>
+                   <td><label for="seccion">Tipo de anuncio (*):</label></td>
+                   <td>
+                       <select name="seccion" id="seccion" onchange="cargar_secciones(this.value);">
+                           <option value="">Seleccionar</option>
+                           #secciones#
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td><label for="categoria">Categor&iacute;a (*):</label></td>
+                   <td>
+                       <select name="idc" id="categoria">
+                           <option value="">Seleccione una </option>
+                       </select>
+                   </td>
+               </tr>
+           </tbody>
+       </table>
+    <!--<label for="seccion">Tipo de anuncio (*):</label>-->
+    <!--<select name="seccion" id="seccion" onchange="cargar_secciones(this.value);">-->
+     <!--<option value="">Seleccionar</option>-->
+      <!--#secciones#-->
+     <!--</select>-->
+     <!--<br/>-->
+     <!--<label for="categoria">Categor&iacute;a (*):</label>-->
+ 	 <!--<select name="idc" id="categoria">-->
+ 	 <!--<option value="">Seleccione una </option>-->
+     <!--</select>-->
+     <!--<br/>-->
      </div>
      <div class="titulo">Datos de contacto</div>
      <div class="box">
+         <!-- RANDY 25/07/2014 Cambiando el estilo al formulario -->
+         <table align="center" width="100%">
+             <tbody>
+                <tr>
+                    <td colspan="2">Si no est&aacute; registrado, puede introducir sus datos</td>
+                </tr>
+                 <tr>
+                     <td><label for="nombre_aux">Nombre (*):</label></td>
+                     <td><input type="text" size="23" name="nombre_aux" id="nombre_aux" value="#nombre#"/>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td><label for="email_aux">Correo electr&oacute;nico (*):</label></td>
+                     <td><input type="text" size="23" name="email_aux" id="email_aux" value="#email#"/></td>
+                 </tr>
+                <tr>
+                    <td colspan="2">Si est&aacute; registrado #info_login#</td>
+                </tr>
+                <tr>
+                    <td><label for="tlf_contacto_aux">Tel&eacute;fono del contacto:</label></td>
+                    <td><input id="tlf_contacto_aux" type="text" class="casilla" name="tlf_contacto_aux"  size="40"></td>
+                </tr>
+                <tr>
+                    <td><label for="tlf_confidencial_aux" style="margin-right: 10px;">#i18n-tlf#</label></td>
+                    <td><input type="checkbox" value="1" name="tlf_confidencial_aux" id="tlf_confidencial_aux"/></td>
+                </tr>
+                <tr>
+                    <td><label for="tipo_propietario_aux">Tipo propietario (*):</label></td>
+                    <td>
+                        <select name="tipo_propietario_aux" id="tipo_propietario_aux">
+                            #tipos_propietario#
+                        </select>
+                    </td>
+                </tr>
+             </tbody>
+         </table>
+         <small>#i18n-dato-obligatorio#</small><br/>
+         <input type="button" id="mostrar_form" value="Continuar" onclick="mostrar_formulario()"/>
+ <!--Si no est&aacute; registrado, puede introducir sus datos-->
+ <!--<br/>-->
+ <!--<label for="nombre_aux">Nombre (*):</label>-->
+ <!--<input type="text" size="23" name="nombre_aux" id="nombre_aux" value="#nombre#"/>-->
+ <!--<label for="email_aux">Correo electr&oacute;nico (*):</label>-->
+ <!--<input type="text" size="23" name="email_aux" id="email_aux" value="#email#"/>-->
  
- Si no est&aacute; registrado, puede introducir sus datos
- <br/>
- <label for="nombre_aux">Nombre</label>
- <input type="text" size="23" name="nombre_aux" id="nombre_aux" value="#nombre#"/>
- <label for="email_aux">Correo electr&oacute;nico</label>
- <input type="text" size="23" name="email_aux" id="email_aux" value="#email#"/>
+ <!--<br/>-->
  
- <br/>
- 
- Si est&aacute; registrado
- #info_login#
- <br/>
- <label for="tlf_contacto_aux">Tel&eacute;fono del contacto:</label><br/>
- <input id="tlf_contacto_aux" type="text" class="casilla" name="tlf_contacto_aux"  size="40"><br/>
- <label for="tlf_confidencial_aux">TLF confidencial</label><input type="checkbox" value="1" name="tlf_confidencial_aux" id="tlf_confidencial_aux"/>
- <br/>
- <label for="titulo_es">Tipo propietario</label>
- <select name="tipo_propietario_aux" id="tipo_propietario_aux">
-  #tipos_propietario#
- </select>
+ <!--Si est&aacute; registrado-->
+ <!--#info_login#-->
+ <!--<br/>-->
+ <!--<label for="tlf_contacto_aux">Tel&eacute;fono del contacto:</label>-->
+ <!--<input id="tlf_contacto_aux" type="text" class="casilla" name="tlf_contacto_aux"  size="40"><br/>-->
+ <!--<label for="tlf_confidencial_aux">TLF confidencial</label><input type="checkbox" value="1" name="tlf_confidencial_aux" id="tlf_confidencial_aux"/>-->
+ <!-- RANDY 25/07/2014 Agregando i18n y separando el checkbox -->
+ <!--<label for="tlf_confidencial_aux" style="margin-right: 10px;">#i18n-tlf#</label><input type="checkbox" value="1" name="tlf_confidencial_aux" id="tlf_confidencial_aux"/>-->
+ <!--<br/>-->
+ <!--<label for="titulo_es">Tipo propietario (*):</label>-->
+ <!--<select name="tipo_propietario_aux" id="tipo_propietario_aux">-->
+  <!--#tipos_propietario#-->
+ <!--</select>-->
  </div>
  
- <input type="button" id="mostrar_form" value="Continuar" onclick="mostrar_formulario()"/>
+ <!--<input type="button" id="mostrar_form" value="Continuar" onclick="mostrar_formulario()"/>-->
  </div>
 	
  </div>

@@ -1,8 +1,15 @@
 var map ; //Mapa global ;)
-google.load("maps", "2");
-google.load("elements", "1", {
-  packages : ["localsearch"]
-});
+// RANDY 25/07/2014 Agregar mapa si está conectado
+if(typeof google != 'undefined') {
+    google.load("maps", "2");
+    google.load("elements", "1", {
+        packages : ["localsearch"]
+    });
+}
+//google.load("maps", "2");
+//google.load("elements", "1", {
+//  packages : ["localsearch"]
+//});
 /*
 PARA GOOGLE MAPS
 */

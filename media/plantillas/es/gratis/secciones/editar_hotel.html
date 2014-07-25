@@ -20,7 +20,7 @@ function validar(){
 <table>
 <tbody>
 <tr>
- <td width="5%"><label for="titulo_es">T&iacute;tulo espa&ntilde;ol</label></td>
+ <td width="5%"><label for="titulo_es">T&iacute;tulo espa&ntilde;ol (*):</label></td>
  <td width="95%"><input id="titulo_es" type="text" class="casilla" name="titulo_es" value="#titulo_es#" size="40">
  <br/>
  <label for="titulo_confidencial">T&iacute;tulo confidencial:</label>
@@ -162,7 +162,7 @@ function validar(){
 </select></td>
 </tr>
 <tr>
-<td width="5%"><label for="provincia">Provincia</label></td>
+<td width="5%"><label for="provincia">Provincia (*):</label></td>
 <td width="95%">
  <select id="provincia" class="texto" name="provincia">
 <option selected="" value="">-
@@ -286,7 +286,9 @@ function validar(){
 </td>
 </tr>
 <tr>
-<td><label for="ciudad">Ciudad/Pueblo</label></td>
+<!--<td><label for="ciudad">Ciudad/Pueblo</label></td>-->
+    <!-- Randy 25/07/2014 Cambiando label por Localidad + i18n (no se puede internacionalizar por el momento porque no funciona la internacionalización para esta vista) -->
+    <td><label for="ciudad">#i18n-localidad#</label></td>
 <td><input type="text" class="casilla" name="ciudad" id="ciudad" value="#ciudad#"></td>
 </tr>
 <tr>
@@ -311,9 +313,9 @@ Localizaci&oacute;n en el Mapa (pinche sobre un punto):
 </td>
 <td>
 <div id="elmapa" style="width: 700px; height: 600px; position: relative; background-color: rgb(229, 227, 223);"></div>
-<label for="lng"><b>Longitud</b></label> 
+<label for="lng"><b>Longitud (*):</b></label>
 <input type="text" class="casilla" size="40" value="#lng#" name="lng" id="lng">
-<label for="lat"><b>Latitud</b></label>
+<label for="lat"><b>Latitud (*):</b></label>
 <input type="text" class="casilla" size="40" value="#lat#" name="lat" id="lat">
 </td>
 </tr>
@@ -469,7 +471,7 @@ Localizaci&oacute;n en el Mapa (pinche sobre un punto):
 <td><input type="text" class="casilla" size="40" value="" name="meta_desc" id="meta_desc" value="#meta_desc#"></td>
 </tr>
 <tr>
-<td width="150">Im&aacute;genes (580x397px)</td>
+<td width="150">Im&aacute;genes (580x397px) (*):</td>
   <td><div id="imagenes">
     #imagenes#
     <input type="file" name="imagenes[]" id="imagen0" />
@@ -480,7 +482,9 @@ Localizaci&oacute;n en el Mapa (pinche sobre un punto):
  <td width="5%"><label for="videos">V&iacute;deo embebido (youtube, vimeo,etc.)</label></td>
  <td width="95%"><textarea style="width:100%" id="videos" name="videos" cols="85" rows="4">#videos#</textarea></td>
 </tr>
-<tr><td colspan="2"><a class="boton" href="javascript:window.location.reload()">&laquo; Volver </a> <input type="button" onclick="validar();" class="boton" value="Actualizar &raquo;"></td>
+<tr><td colspan="2">
+    <small>Los campos con (*) son requeridos</small><br/>
+    <a class="boton" href="javascript:window.location.reload()">&laquo; Volver </a> <input type="button" onclick="validar();" class="boton" value="Actualizar &raquo;"></td>
 </tr>
 </tbody>
 </table>
