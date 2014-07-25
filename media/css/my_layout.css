@@ -84,6 +84,8 @@ border-width:medium 1px;
 height:auto;
 overflow:hidden;
 padding:20px !important;
+    /*RANDY, 24/07/214 Ajustando el tamaño de la caja*/
+    width: 548px;
 }
 .ficha #datosBasicos .intro {
 font-size:1.4em;

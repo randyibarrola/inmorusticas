@@ -2,12 +2,25 @@
 function validar(){ 
  f = document.frmContacto;
  if (f.nombre.value.length<3 || f.email.value.length<5) alert("Introduzca su nombre y su correo");
+ else if(!validateEmail(f.email)) {
+     window.alert("Introduzca un e-mail válido");
+     return false;
+ }
  else f.submit();
+}
+// RANDY, 24/07/214 Función para validar un correo electrónico
+function validateEmail(field) {
+    var RegExPattern = /[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+    if ((field.value.match(RegExPattern)) && (field.value!=''))
+        return true;
+    else
+        return false;
 }
 </script>
 <div class="ficha">
 <h1>Contacto</h1>
-<div class="caja">
+ <!-- RANDY, 24/07/214 Agregamos un mergin para centrar hasta que se modifique con bootstrap -->
+<div class="caja" style="margin-left: 20%">
 <br/>
 <div class="titulo">
 <h2>Utilice el siguiente formulario para realizar una consulta</h2>
@@ -34,7 +47,8 @@ function validar(){
  </tr>
  <tr>
  <td><label for="mensaje">Mensaje:</label></td>
- <td><textarea name="mensaje" id="mensaje" class="caja"></textarea> </td>
+ <!--<td><textarea name="mensaje" id="mensaje" class="caja"></textarea> </td>-->
+ <td><textarea name="mensaje" id="mensaje" class=""></textarea> </td>
  </tr>
  </table>
  <br/>

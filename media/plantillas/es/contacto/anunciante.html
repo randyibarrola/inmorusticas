@@ -4,10 +4,24 @@ function validar(){
  if (d.nombre.value.length<3 || d.correo.value.length<7){
   window.alert("Introduzca su nombre y e-mail antes de enviar el mensaje por favor");
   return false;
- } else {
+ }
+ else if(!validateEmail(d.correo)) {
+     window.alert("Introduzca un e-mail válido");
+     return false;
+ }
+ else {
   d.submit();
  }
 }
+
+    // RANDY, 24/07/214 Función para validar un correo electrónico
+    function validateEmail(field) {
+        var RegExPattern = /[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+        if ((field.value.match(RegExPattern)) && (field.value!=''))
+            return true;
+        else
+            return false;
+    }
 </script>
 <div id="form">
     <form name="frmContacto" id="frmContacto" action="/contactar_anunciante/enviar/" method="POST" onsubmit="validar(); return false;">
