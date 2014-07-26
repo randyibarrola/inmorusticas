@@ -12,9 +12,9 @@ var geocoder;
 var htmls;
 var marcas; //Info para enlaces de la barra derecha
 var ini = false;
-var localizacion =  new GLatLng(40.41733308929806,-3.7000536918640137); //Madrid
+var localizacion =  typeof GLatLng != 'undefined' ? new GLatLng(40.41733308929806,-3.7000536918640137) : {}; //Madrid
 function init() {
-    if (GBrowserIsCompatible()) {
+    if (typeof GBrowserIsCompatible != 'undefined' && GBrowserIsCompatible()) {
         mapa = new GMap2(document.getElementById("localizador"));
         
         if(typeof (centerLongitud) == "undefined"){
@@ -173,7 +173,7 @@ function CrearMarca(latlng, html,IconImage){
    });
    return marker;
 }
-window.onunload =GUnload;
+window.onunload = typeof GUnload != 'undefined' ? GUnload : function() {};
 // This function adds the point to the map
 function addToMap(response)
 {
@@ -188,7 +188,7 @@ function addToMap(response)
       
     mapa.openInfoWindowHtml(place.address);
 }
-// Para centrar el mapa en una dirección dada
+// Para centrar el mapa en una direcciï¿½n dada
 function centerInMap(response)
 {
     // Retrieve the object
